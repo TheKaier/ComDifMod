@@ -1,0 +1,1229 @@
+[
+/*{//模板
+		"name": "Unit.Bulider",//建造者
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 2,
+		//"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [500] [Money]",
+		"[1] free [ArmyfactoryT1] units appear <for [2] movement>",
+		
+		],
+		//"attackSound": ""
+	},*/
+	/*{
+		"name": "Unit.SeaBuilder",//海上建造者
+		"unitType": "ComDifMod.Water",
+		//"range": 2,
+		"movement": 2,
+		//"strength": 15,
+		//"rangedStrength": 15,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [500] [Money]",
+		],
+		//"attackSound": ""
+	},*/
+	///////////Building
+	{
+		"name": "Building.CommandCenter.1",//指挥中心1
+		"unitType": "ComDifMod.Land",
+		"range": 3,
+		"movement": 1,
+		"strength": 15,
+		"rangedStrength": 15,
+		"replaces": "Settler",
+		"uniqueTo": "Nation.Player1",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly provides [1000] [Money]",//补充资金
+		//"Provides [100] [Money]",
+		"Consumes [-100] [Money]",
+		"[1] free [Warrior] units appear <for [1] movement> <when above [499] [Money]>",
+		"[1] free [Unit.Tout] units appear  <for [1] movement> <when above [699] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.CommandCenter.2",//指挥中心2
+		"unitType": "ComDifMod.Land",
+		"range": 3,
+		"movement": 1,
+		"strength": 15,
+		"rangedStrength": 15,
+		"replaces": "Settler",
+		"uniqueTo": "Nation.Player2",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly provides [1000] [Money]",//补充资金
+		//"Provides [100] [Money]",
+		"Consumes [-100] [Money]",
+		"[1] free [Warrior] units appear <for [1] movement> <when above [499] [Money]>",
+		"[1] free [Unit.Tout] units appear <for [1] movement> <when above [699] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	{
+		"name": "Building.ArmyfactoryT1",//陆军工厂T1
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 15,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [700] [Money]",
+		"[1] free [Warrior] units appear <for [1] movement> <when above [499] [Money]>",
+		"[1] free [Unit.Tout] units appear <for [1] movement> <when above [699] [Money]>",
+		"[1] free [Unit.Tank] units appear <for [1] movement> <when above [349] [Money]>",
+		"[1] free [Unit.FloatingTank] units appear <for [1] movement> <when above [449] [Money]>",
+		"[1] free [Unit.SelfpropelledGun] units appear <for [1] movement> <when above [899] [Money]>",
+		"Can transform to [Building.ArmyfactoryT2] <when above [1999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ArmyfactoryT2",//陆军工厂T2
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 20,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [2000] [Money]",
+		"[1] free [Warrior] units appear <for [1] movement> <when above [499] [Money]>",
+		"[1] free [Unit.Tout] units appear <for [1] movement> <when above [699] [Money]>",
+		"[1] free [Unit.Tank] units appear <for [1] movement> <when above [349] [Money]>",
+		"[1] free [Unit.FloatingTank] units appear <for [1] movement> <when above [449] [Money]>",
+		"[1] free [Unit.SelfpropelledGun] units appear <for [1] movement> <when above [899] [Money]>",
+		"[1] free [Unit.CombatEngineer] units appear <for [1] movement> <when above [3499] [Money]>",
+		"[1] free [Unit.HeavyTank] units appear <for [1] movement> <when above [799] [Money]>",
+		"[1] free [Unit.PlasmaTank] units appear <for [1] movement> <when above [999] [Money]>",
+		"[1] free [Unit.HeavyAircushionTank] units appear <for [1] movement> <when above [999] [Money]>",
+		"[1] free [Unit.HeavyGun] units appear <for [1] movement> <when above [3099] [Money]>",
+		"[1] free [Unit.MammothTank] units appear <for [1] movement> <when above [3899] [Money]>",
+		
+		
+		
+		
+		
+		
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceExtractorT1",//资源抽取仪T1
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [700] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-100] [Money] <in [Luxury resource] tiles>",
+		"Can transform to [Building.ResourceExtractorT2] <when above [1399] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceExtractorT2",//资源抽取仪T2
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1400] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-200] [Money] <in [Luxury resource] tiles>",
+		"Can transform to [Building.ResourceExtractorT3] <when above [3999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceExtractorT3",//资源抽取仪T3
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 5,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [8000] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-300] [Money] <in [Luxury resource] tiles>",
+		"Can transform to [Building.ResourceExtractorT4] <when above [7999] [Money]>",
+		"Can transform to [Building.ResourceExtractorT5] <when above [2999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceExtractorT4",//资源抽取仪T4
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 5,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [8000] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-400] [Money] <in [Luxury resource] tiles>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceExtractorT5",//资源抽取仪T5
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 20,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [3000] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-300] [Money] <in [Luxury resource] tiles>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceInstrumentT1",//资源制造仪T1
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [2200] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-75] [Money]",
+		"Can transform to [Building.ResourceInstrumentT2] <when above [4399] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceInstrumentT2",//资源制造仪T2
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 12,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [4400] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-150] [Money]",
+		"Can transform to [Building.ResourceInstrumentT3] <when above [7499] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.ResourceInstrumentT3",//资源制造仪T3
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 15,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [7500] [Money]",
+		//"Provides [100] [Money]",
+		"Consumes [-200] [Money]",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	
+	//ResourceInstrumentT1
+	{
+		"name": "Building.Rehabilitatedbay",//修复湾
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 15,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1500] [Money]",
+		"Heal this unit by [10] HP <upon turn end>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.WatchtowerT1",//瞭望塔T1
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1500] [Money]",
+		"[+6] Sight",
+		"Can see over obstacles",
+		"Can transform to [Building.WatchtowerT2] <when above [1999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.WatchtowerT2",//瞭望塔T2
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 12,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [2000] [Money]",
+		"[+12] Sight",
+		"Can see over obstacles",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.MachinegunEmplacementT1",//机枪炮台T1
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 1,
+		"strength": 12,
+		"rangedStrength": 12,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [500] [Money]",
+		"[+1] Sight",
+		"Can transform to [Building.MachinegunEmplacementT2] <when above [999] [Money]>",
+		"Can transform to [Building.GunEmplacementT1] <when above [1599] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.MachinegunEmplacementT2",//机枪炮台T2
+		"unitType": "ComDifMod.Land",
+		"range": 3,
+		"movement": 2,
+		"strength": 16,
+		"rangedStrength": 16,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"[1] additional attacks per turn",
+		"Instantly consumes [1000] [Money]",
+		"[+2] Sight",
+		"Can transform to [Building.MachinegunEmplacementT3] <when above [10999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.MachinegunEmplacementT3",//机枪炮台T3
+		"unitType": "ComDifMod.Land",
+		"range": 4,
+		"movement": 3,
+		"strength": 13,
+		"rangedStrength": 23,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"[2] additional attacks per turn",
+		"Instantly consumes [11000] [Money]",
+		"[+3] Sight",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.GunEmplacementT1",//火炮炮台T1
+		"unitType": "ComDifMod.Land",
+		"range": 4,
+		"movement": 1,
+		"strength": 12,
+		"rangedStrength": 9,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1600] [Money]",
+		"[+3] Sight",
+		"Can transform to [Building.GunEmplacementT2] <when above [8999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.GunEmplacementT2",//火炮炮台T2
+		"unitType": "ComDifMod.Land",
+		"range": 7,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 15,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [9000] [Money]",
+		"[+5] Sight",
+		"[1] additional attacks per turn",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.NavalBaseT1",//海军基地T1
+		"unitType": "ComDifMod.Water",
+		//"range": 2,
+		"movement": 1,
+		"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1000] [Money]",
+		"[1] free [Unit.SeaBuilder] units appear <for [1] movement> <when above [499] [Money]>",
+		"[1] free [Unit.MachineGunBoat] units appear <for [1] movement> <when above [299] [Money]>",
+		"[1] free [Unit.GuidedMissileShip] units appear <for [1] movement> <when above [899] [Money]>",
+		"[1] free [Unit.Battleship] units appear <for [1] movement> <when above [1499] [Money]>",
+		"[1] free [Unit.Submarine] units appear <for [1] movement> <when above [799] [Money]>",
+		"Can transform to [Building.NavalBaseT2] <when above [1999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Building.NavalBaseT2",//海军基地T2
+		"unitType": "ComDifMod.Water",
+		//"range": 2,
+		"movement": 1,
+		"strength": 10,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [2000] [Money]",
+		"[1] free [Unit.SeaBuilder] units appear <for [1] movement> <when above [499] [Money]>",
+		"[1] free [Unit.MachineGunBoat] units appear <for [1] movement> <when above [299] [Money]>",
+		"[1] free [Unit.GuidedMissileShip] units appear <for [1] movement> <when above [899] [Money]>",
+		"[1] free [Unit.Battleship] units appear <for [1] movement> <when above [1499] [Money]>",
+		"[1] free [Unit.Submarine] units appear <for [1] movement> <when above [799] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	//NavalBaseT1
+///////////Unit
+	{
+		"name": "Unit.Bulider.1",//建造者1
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 2,
+		//"strength": 10,
+		//"rangedStrength": 10,
+		"replaces": "Warrior",
+		"uniqueTo": "Nation.Player1",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		//"Can only attack [City] units",
+		//"[-99]% Strength <vs cities> <when attacking>",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [500] [Money]",
+		"[1] free [Building.ArmyfactoryT1] units appear <for [2] movement> <when above [699] [Money]>",
+		"[1] free [Building.Rehabilitatedbay] units appear <for [2] movement> <when above [1499] [Money]>",
+		"[1] free [Building.MachinegunEmplacementT1] units appear <for [2] movement> <when above [499] [Money]>",
+		"[1] free [Building.ResourceExtractorT1] units appear <in [Luxury resource] tiles> <for [2] movement> <when above [699] [Money]>",
+		"[1] free [Building.ResourceInstrumentT1] units appear <for [2] movement> <when above [2199] [Money]>",
+		"[1] free [Building.NavalBaseT1] units appear <for [2] movement> <when above [999] [Money]>",
+		
+		//<in [Land] tiles>
+		////<with [1] to [6] neighboring [Luxury resource] tiles>
+		//<in [Land] tiles>
+		///<with [1] to [6] neighboring [Coast] tiles>
+		///<with [0] to [0] neighboring [Coast] tiles>
+		//Building.NavalBaseT1
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.Bulider.2",//建造者2
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 2,
+		//"strength": 10,
+		//"rangedStrength": 10,
+		"replaces": "Warrior",
+		"uniqueTo": "Nation.Player2",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		//"Can only attack [City] units",
+		//"[-99]% Strength <vs cities> <when attacking>",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [500] [Money]",
+		"[1] free [Building.ArmyfactoryT1] units appear <for [2] movement> <when above [699] [Money]>",
+		"[1] free [Building.Rehabilitatedbay] units appear <for [2] movement> <when above [1499] [Money]>",
+		"[1] free [Building.MachinegunEmplacementT1] units appear <for [2] movement> <when above [499] [Money]>",
+		"[1] free [Building.ResourceExtractorT1] units appear <in [Luxury resource] tiles> <for [2] movement> <when above [699] [Money]>",
+		"[1] free [Building.ResourceInstrumentT1] units appear <for [2] movement> <when above [2199] [Money]>",
+		"[1] free [Building.NavalBaseT1] units appear <for [2] movement> <when above [999] [Money]>",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	
+	{
+		"name": "Unit.CombatEngineer",//战斗工程师
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 3,
+		"strength": 14,
+		//"rangedStrength": 14,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		//"Can only attack [City] units",
+		"[-99]% Strength <vs cities> <when attacking>",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [3500] [Money]",
+		"May travel on Water tiles without embarking",
+		"Consumes [-10] [Money]",
+		"[1] free [Building.WatchtowerT1] units appear <for [3] movement> <when above [1499] [Money]>",
+		"[1] free [Building.MachinegunEmplacementT1] units appear <for [3] movement> <when above [499] [Money]>",
+		"[1] free [Unit.HeavyTank] units appear <for [3] movement> <when above [799] [Money]>",
+		"[1] free [Warrior] units appear <for [3] movement> <when above [499] [Money]>",
+		"[1] free [Building.ResourceExtractorT1] units appear <with [1] to [6] neighboring [Luxury resource] tiles> <for [3] movement> <when above [699] [Money]>",
+		"[1] free [Building.ArmyfactoryT1] units appear <in [Luxury resource] tiles> <for [3] movement> <when above [699] [Money]>",
+		"[1] free [Building.Rehabilitatedbay] units appear <for [3] movement> <when above [1499] [Money]>",
+		"[1] free [Building.ResourceInstrumentT1] units appear <for [3] movement> <when above [2199] [Money]>",
+		"[1] free [Building.NavalBaseT1] units appear <for [2] movement> <when above [999] [Money]>",
+		
+		
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.Tout",//侦查者
+		"unitType": "ComDifMod.Land",
+		"range": 1,
+		"movement": 2,
+		"strength": 9,
+		"rangedStrength": 9,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [700] [Money]",
+		"[+1] Movement <with [50]% chance>",
+		"[+1] Sight",
+		"May travel on Water tiles without embarking",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.Tank",//坦克
+		"unitType": "ComDifMod.Land",
+		"range": 1,
+		"movement": 3,
+		"strength": 10,
+		"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [350] [Money]",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.FloatingTank",//悬浮坦克
+		"unitType": "ComDifMod.Land",
+		"range": 1,
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 9,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [450] [Money]",
+		"[+1] Movement <with [75]% chance>",
+		"May travel on Water tiles without embarking",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.SelfpropelledGun",//自行火炮
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 8,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [900] [Money]",
+		"[-1] Movement <with [33]% chance>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.HeavyTank",//重型坦克
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 15,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [800] [Money]",
+		"[+1] Movement <with [66]% chance>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.PlasmaTank",//等离子坦克
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 2,
+		"strength": 16,
+		"rangedStrength": 16,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1000] [Money]",
+		"[+1] Movement <with [66]% chance>",
+		"[+25]% Strength <when defending> <when above [85] HP>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.HeavyAircushionTank",//重型气垫坦克
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 2,
+		"strength": 13,
+		"rangedStrength": 13,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1000] [Money]",
+		"[+1] Movement <with [33]% chance>",
+		"May travel on Water tiles without embarking",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.HeavyGun",//重型火炮
+		"unitType": "ComDifMod.Land",
+		"range": 3,
+		"movement": 2,
+		"strength": 13,
+		"rangedStrength": 13,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [3100] [Money]",
+		"[+1] Range <with [33]% chance>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.MammothTank",//猛犸坦克
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 15,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [3900] [Money]",
+		"[+35]% Strength <when defending>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.SeaBuilder",//海上建造者
+		"unitType": "ComDifMod.Water",
+		//"range": 2,
+		"movement": 2,
+		//"strength": 15,
+		//"rangedStrength": 15,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [500] [Money]",
+		"[1] free [Building.ArmyfactoryT1] units appear <for [2] movement> <when above [699] [Money]>",
+		"[1] free [Building.Rehabilitatedbay] units appear <for [2] movement> <when above [1499] [Money]>",
+		"[1] free [Building.MachinegunEmplacementT1] units appear <for [2] movement> <when above [499] [Money]>",
+		"[1] free [Building.ResourceExtractorT1] units appear <in [Luxury resource] tiles> <for [2] movement> <when above [699] [Money]>",
+		"[1] free [Building.ResourceInstrumentT1] units appear <for [2] movement> <when above [2199] [Money]>",
+		"[1] free [Building.NavalBaseT1] units appear <for [2] movement> <when above [999] [Money]>",
+		
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.MachineGunBoat",//机枪艇
+		"unitType": "ComDifMod.Water",
+		"range": 1,
+		"movement": 4,
+		"strength": 8,
+		"rangedStrength": 7,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [300] [Money]",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.GuidedMissileShip",//导弹舰
+		"unitType": "ComDifMod.Water",
+		"range": 2,
+		"movement": 3,
+		"strength": 11,
+		"rangedStrength": 11,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [900] [Money]",
+		"[+10]% Strength <when defending>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Unit.Battleship",//战列舰
+		"unitType": "ComDifMod.Water",
+		"range": 2,
+		"movement": 3,
+		"strength": 14,
+		"rangedStrength": 14,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [Money]>",
+		"Instantly consumes [1500] [Money]",
+		"[+20]% Strength <when defending>",
+		"[+1] Range <with [50]% chance>",
+		"[-1] Movement <with [25]% chance>",
+		],
+		//"attackSound": ""
+	},
+	{{
+		"name": "Unit.Submarine",//潜水艇"name": "Unit.Submarine",//潜水艇
+		"unitType": "ComDifMod.Water","unitType": "ComDifMod.Water",
+		“范围”：1，"range": 1,
+		“运动”：3，"movement": 3,
+		“力量”：10，"strength": 10,
+		“范围强度”：10，"rangedStrength": 10,
+		//“替换”：“”，"replaces": "",
+		//"uniqueTo": "","uniqueTo": "",
+		“成本”：0，"cost": 0,
+		//“必需技术”：“”，"requiredTech": "",
+		//"upgradesTo": "","upgradesTo": "",
+		//"obsoleteTech": "","obsoleteTech": "",
+		//“促销”：[]，"promotions": [],
+		“独特”：["uniques": [
+		“无法建造”，"Unbuildable",
+		//“无法攻击”,"Cannot attack",
+		//“无法移动”,"Cannot move",
+		“没有防御地形奖励”“没有防御地形奖励”
+		“永远不会以野蛮人单位的形式出现”，
+		“仅可用<用[金钱]>”，"Only available <with [Money]>",
+		“瞬间消耗[800][金钱]”，"Instantly consumes [800] [Money]",
+		“只能攻击[水]方块”，"Can only attack [Water] tiles",
+		"[+100]% 力量<攻击时>","[+100]% Strength <when attacking>",
+		“可以进入冰块”，"Can enter ice tiles",
+		“对非相邻单位不可见”，"Invisible to non-adjacent units",
+		],] ,
+		//“攻击声音”：“”
+	} ,} ,
+	//Unit.SeaBuilder海上建造者
+	//Unit.MachineGunBoat机枪艇
+	//Unit.GuidedMissileShip导弹舰
+	//Unit.Battleship战列舰
+	//Unit.Submarine潜水艇
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+]
+
+//<当高于 [ 150 ] [钱] >[  150  ]   [钱] >
+//“可乘水瓦而不登船”，//科技研发前进入海洋
