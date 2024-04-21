@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Double speed",//二倍速
+        "modifier": 0.5,//整体速度
+        "productionCostModifier": 0.5,//产能需求
+        "goldCostModifier": 0.5,//金钱购买力
+        "scienceCostModifier": 0.5,//科技成本
+        "cultureCostModifier": 0.5,//政策成本
+        "faithCostModifier": 0.5,//信仰需求
+        "improvementBuildLengthModifier": 0.5,//区块建造时间
+        "barbarianModifier": 0.5,//蛮族生成时间
+        "goldGiftModifier": 1.5,//城邦送礼影响力
+        "cityStateTributeScalingInterval": 4.0,//城邦进贡间隔
+        "goldenAgeLengthModifier": 0.70,//黄金时代时间
+        "religiousPressureAdjacentCity": 11,//宗教压力
+        "peaceDealDuration": 8,//和平条约
+        "dealDuration": 20,//贸易时长
+        "startYear": -4000,
+        "turns": [
+            {"yearsPerTurn": 80, "untilTurn":  55},
+            {"yearsPerTurn": 60, "untilTurn":  75},
+            {"yearsPerTurn": 40, "untilTurn": 95},
+            {"yearsPerTurn": 30, "untilTurn": 115},
+            {"yearsPerTurn": 20, "untilTurn": 140},
+            {"yearsPerTurn": 10, "untilTurn": 170},
+            {"yearsPerTurn":  5, "untilTurn": 210},
+            {"yearsPerTurn":  2, "untilTurn": 280}
+        ]
+    },
+    
+
+]
