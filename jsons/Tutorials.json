@@ -1,0 +1,31 @@
+[
+    {
+        "name":"-模组当前版本-测试v0.0.1\n如果您希望获得最新版本请前往QQ群959381334",
+        "civilopediaText":[
+        {
+                "text": "点击链接加入群聊 纵横捭阖-模组制作群"
+                "link":"http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Wlqs8kMiZiu0w7x8eP715LLO6MRdA3PN&authKey=LbFZlMGWONCZB0iUM6srHa%2B%2FHF393Cwo%2BnBFk7LbZxRm%2BX%2BzL%2BDGTqTMHU%2FJnryH&noverify=0&group_code=959381334",
+                "size":20,
+                "starred":true,
+                "color":"#FFFF00"
+            },
+            /*{ 
+                "text": "更新日志",
+                "size":30
+            },
+            { 
+                "text": "1.新增"
+                "size":20
+            },*/
+
+
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+        ]
+    }
+    
+    
+]
