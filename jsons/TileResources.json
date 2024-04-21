@@ -1,0 +1,13 @@
+[
+
+	{
+		"name": "Money",//玩家金钱
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		]
+	},
+
+]
