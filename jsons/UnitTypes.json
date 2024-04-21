@@ -1,0 +1,15 @@
+[
+    {
+        "name": "ComDifMod.Land",//
+        "movementType": "Land"
+    },
+        {
+        "name": "ComDifMod.Water",
+        "movementType": "Water"
+    },
+        {
+        "name": "ComDifMod.Air",
+        "movementType": "Air",
+        //"uniques": []
+    },
+]
