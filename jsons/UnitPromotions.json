@@ -1,0 +1,16 @@
+[
+    {
+		"name": "ComDifMod",
+		"uniques": [
+		//"[-50] HP when healing",//取消回血
+		"Can only heal by pillaging",//劫掠回血
+		"Heal this unit by [10] HP <when adjacent to a [Building.Rehabilitatedbay] unit> <upon turn end>",
+		],
+		//"unitTypes": [],
+        "row": 1024,
+        "column": 1024
+    },
+    
+
+	//Building.Rehabilitatedbay
+]
