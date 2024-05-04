@@ -9,5 +9,35 @@
 		"Stockpiled"//库存
 		]
 	},
+	{
+		"name": "Supply",//玩家补给
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		//"Stockpiled"//库存
+		]
+	},
+	{
+		"name": "CrystallineOre",//晶体矿
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		]
+	},
+	{
+		"name": "Mashgas",//高能瓦斯
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		]
+	},
+	
+	
+	
 
 ]

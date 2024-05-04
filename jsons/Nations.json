@@ -32,7 +32,7 @@
 		"Nullifies [Gold] [in all cities]",
 		"Nullifies [Faith] [in all cities]",
 		"Nullifies [Production] [in all cities]",
-		"[All] units gain the [ComDifMod] promotion <upon turn end>",
+		"[All] units gain the [ComDifMod.RustedWar] promotion <upon turn end>",
 		
 		],
 		"cities": [
@@ -69,12 +69,55 @@
 		"Nullifies [Faith] [in all cities]",
 		"Nullifies [Production] [in all cities]",
 		
-		"[All] units gain the [ComDifMod] promotion <upon turn end>",
+		"[All] units gain the [ComDifMod.RustedWar] promotion <upon turn end>",
 		],
 		"cities": [
 			"1",
 		]
 	},
+	{
+		"name": "Nation.Player3",
+		"leaderName": "Leader",
+		"adjective": [""],
+		"preferredVictoryType": "Domination",
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		"outerColor": [255, 255, 255],
+		"innerColor": [65, 141, 254],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [
+		//"Provides [1] [Player] <hidden from users>",
+		"[-100]% maintenance costs",
+		"[-100]% maintenance on road & railroads",
+		"[-100]% unhappiness from the number of cities",
+		"[-100]% Unhappiness from [Population] [in all cities]",
+		"Nullifies [Science] [in all cities]",
+		"Nullifies [Culture] [in all cities]",
+		"Nullifies [Gold] [in all cities]",
+		"Nullifies [Faith] [in all cities]",
+		"Nullifies [Production] [in all cities]",
+		
+		"[All] units gain the [ComDifMod.StarCraft] promotion <upon turn end>",
+		],
+		"cities": [
+			"1",
+		]
+	},
+	
+	
+	
+	
+	
+	
+	
 ]
 
 

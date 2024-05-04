@@ -1,6 +1,15 @@
 {
    "name": "Global uniques",
     "uniques": [
+        "StarCraft.HeavyArmor",
+        "StarCraft.Machinery",
+        "StarCraft.Building",
+        "StarCraft.LightArmor",
+        "StarCraft.Biology",
+        
+        
+        
+        
         
             ]
           
