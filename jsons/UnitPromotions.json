@@ -13,11 +13,103 @@
 		"uniques": [
 		//"[-50] HP when healing",//取消回血
 		"Can only heal by pillaging",//劫掠回血
+		"Heal this unit by [10] HP <when adjacent to a [StarCraft.Unit.Medivac] unit> <for [StarCraft.Biology] units> <upon turn end>",//医疗运输机回血
+		"[AirUnit] units gain the [ComDifMod.StarCraft.Air] promotion <upon turn end>",
 		"This Unit takes [100] damage <for [Warrior] units>",//消灭勇士
 		],
 		//"unitTypes": [],
     },
-    
+    {
+		"name": "ComDifMod.StarCraft.Air",
+		"uniques": [
+		"Ignores terrain cost",
+		
+		],
+		//"unitTypes": [],
+    },
     //ComDifMod.StarCraft
 	//Building.Rehabilitatedbay
+	
+	
+	
+	{
+		"name": "阿尔法突袭",
+		"uniques": [
+		"[+2] Movement",
+		"Can move after attacking",
+		],
+    },
+	{
+		"name": "冥想",
+		"uniques": [
+		"[+100]% Strength <when defending>",
+		"[+5]% Strength <when defending> <for every [1] [英雄击杀数]>",
+		],
+    },
+	{
+		"name": "无极剑道",
+		"uniques": [
+		"[+50]% Strength <when attacking>",
+		"[+4]% Strength <when attacking> <for every [1] [英雄击杀数]>",
+		],
+    },
+	{
+		"name": "高原血统",
+		"uniques": [
+		"[1] additional attacks per turn",
+		"Instantly provides [7] [法力] <upon defeating a [Wounded] unit>",
+		"[+1] Movement",
+		],
+    },
+    
+    
+    
+    
+    
+    {
+		"name": "致盲吹箭",
+		"uniques": [
+		//"[+30]% Strength <when attacking>",
+		//"[+5]% Strength <when attacking> <for every [1] [英雄击杀数]>",
+		"[Target Unit] gains the [致盲] status for [10] turn(s) <upon damaging a [Military] unit>",
+
+		],
+    },
+	{
+		"name": "小莫快跑",
+		"uniques": [
+		"[+2] Movement",
+		],
+    },
+	{
+		"name": "毒性射击",
+		"uniques": [
+		//"[+25]% Strength <when attacking>",
+		//"[+7]% Strength <when attacking> <for every [1] [英雄击杀数]>",
+		//"[1] additional attacks per turn",
+		"[Target Unit] gains the [中毒] status for [10] turn(s) <upon damaging a [Military] unit>",
+		],
+    },
+    {
+		"name": "致盲",
+		"uniques": [
+		"[-5] Sight",
+		],
+    },
+    {
+		"name": "中毒",
+		"uniques": [
+		"This Unit takes [10] damage <upon turn end>",
+		],
+    },
+    
+    
+    
+    
+    
+		//"[unitTriggerTarget] loses the [promotion] status",
+		//unitTriggerTarget只能填This Unit或Target Unit
+		
+		
+		
 ]

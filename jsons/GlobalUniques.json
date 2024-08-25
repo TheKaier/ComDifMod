@@ -7,8 +7,8 @@
         "StarCraft.LightArmor",
         "StarCraft.Biology",
         
-        
-        
+        "AirUnit",
+        //"[This Unit] gains the [致盲] status for [5] turn(s) <upon damaging a [提莫] unit>",
         
         
             ]

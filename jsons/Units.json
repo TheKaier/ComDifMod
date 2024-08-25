@@ -1265,7 +1265,7 @@
 		"Consumes [-1] [Supply]",
 		"Instantly provides [150] [CrystallineOre]",
 		"Can transform to [StarCraft.Building.CommandCenter]",
-		
+		"Can transform to [StarCraft.Building.hatchery]",
 		
 		
 		],
@@ -1428,6 +1428,7 @@
 		"[1] free [StarCraft.Building.SupplyDepot] units appear <for [2] movement> <costs [100] [CrystallineOre]>",
 		"[1] free [StarCraft.Building.Barracks] units appear <for [2] movement>  <costs [150] [CrystallineOre]>",
 		"[1] free [StarCraft.Building.Factory] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [100] [Mashgas]>",
+		"[1] free [StarCraft.Building.Starport] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [100] [Mashgas]>",
 		"Consumes [-10] [CrystallineOre] <in [Bonus resource] tiles>",
 		"Consumes [-10] [Mashgas] <in [Luxury resource] tiles>",
 		"StarCraft.LightArmor",
@@ -1621,6 +1622,423 @@
 		],
 		//"attackSound": ""
 	},
+	{
+		"name": "StarCraft.Unit.Medivac",//医疗运输机
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 3,
+		"strength": 13,
+		//"rangedStrength": 26,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [2] [Supply]",
+		//"Instantly consumes [300] [CrystallineOre]",
+		//"Instantly consumes [200] [Mashgas]",
+		//"Can move after attacking",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Machinery",
+		"AirUnit",
+		],
+		//"attackSound": ""
+	},
+{
+		"name": "StarCraft.Unit.Raven",//铁鸦
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 3,
+		"strength": 11,
+		//"rangedStrength": 26,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [2] [Supply]",
+		//"Instantly consumes [300] [CrystallineOre]",
+		//"Instantly consumes [200] [Mashgas]",
+		//"Can move after attacking",
+		"[1] free [StarCraft.Building.Auto-Turret] units appear <for [3] movement>",
+		"StarCraft.Machinery",
+		"StarCraft.LightArmor",
+		"AirUnit",
+		],
+		//"attackSound": ""
+	},
+{
+		"name": "StarCraft.Building.Auto-Turret",//自动机炮
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 1,
+		"strength": 10,
+		"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		//"Consumes [2] [Supply]",
+		//"Instantly consumes [300] [CrystallineOre]",
+		//"Instantly consumes [200] [Mashgas]",
+		//"Can move after attacking",
+		"This Unit takes [20] damage <upon ending a turn in a [All] tile>",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Machinery",
+		"StarCraft.Building",
+		
+		],
+		//"attackSound": ""
+	},
+{
+		"name": "StarCraft.Unit.Banshee",//女妖
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 3,
+		"strength": 14,
+		"rangedStrength": 14,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [3] [Supply]",
+		//"Instantly consumes [300] [CrystallineOre]",
+		//"Instantly consumes [200] [Mashgas]",
+		//"Can move after attacking",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Machinery",
+		"AirUnit",
+		],
+		//"attackSound": ""
+	},
+{
+		"name": "StarCraft.Unit.Battlecruiser",//战列巡航舰
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 20,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [6] [Supply]",
+		//"Instantly consumes [300] [CrystallineOre]",
+		//"Instantly consumes [200] [Mashgas]",
+		//"Can move after attacking",
+		"[1] additional attacks per turn",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Machinery",
+		"AirUnit",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Building.Starport",//星港
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 20,
+		//"rangedStrength": 20,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		//"Consumes [6] [Supply]",
+		//"Instantly consumes [300] [CrystallineOre]",
+		//"Instantly consumes [200] [Mashgas]",
+		//"Can move after attacking",
+		"[1] free [StarCraft.Unit.Medivac] units appear <for [1] movement> <when above [1] [Supply]> <costs [100] [CrystallineOre]> <costs [100] [Mashgas]>",
+		"[1] free [StarCraft.Unit.Raven] units appear <for [1] movement> <when above [1] [Supply]> <costs [100] [CrystallineOre]> <costs [150] [Mashgas]>",
+		"[1] free [StarCraft.Unit.Banshee] units appear <for [1] movement> <when above [2] [Supply]> <costs [150] [CrystallineOre]> <costs [100] [Mashgas]>",
+		"[1] free [StarCraft.Unit.Battlecruiser] units appear <for [1] movement> <when above [1] [Supply]> <costs [400] [CrystallineOre]> <costs [300] [Mashgas]>",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Machinery",
+		"StarCraft.Building",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+		{
+		"name": "StarCraft.Building.hatchery",//孵化场
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 30,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [-8] [Supply]",
+		//"Instantly consumes [400] [CrystallineOre]",
+		//"Instantly consumes [0] [Mashgas]",
+		"[1] free [StarCraft.Unit.Larva] units appear <for [1] movement>",
+		"[1] free [StarCraft.Unit.Queen] units appear <for [1] movement> <when above [1] [Supply]> <costs [150] [CrystallineOre]>",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Biology",
+		"StarCraft.Building",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Building.Creeptumor",//菌毯肿瘤
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		//"strength": 20,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		//"Consumes [-11] [Supply]",
+		//"Instantly consumes [150] [CrystallineOre]",
+		//"Instantly consumes [0] [Mashgas]",
+		"Can build [Creep] improvements on tiles",
+		"StarCraft.LightArmor",
+		"StarCraft.Biology",
+		"StarCraft.Building",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Unit.Queen",//虫后
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 1,
+		"strength": 10,
+		"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Uncapturable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [2] [Supply]",
+		//"Instantly consumes [50] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		"[1] free [StarCraft.Building.Creeptumor] units appear <for [1] movement>",
+		"StarCraft.Biology",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Unit.Larva",//幼虫
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 0,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Uncapturable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		//"Consumes [1] [Supply]",
+		//"Instantly consumes [50] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		"Can transform to [StarCraft.Unit.Drone] <costs [50] [CrystallineOre]>",
+		"Can transform to [StarCraft.Unit.Zergling] <costs [25] [CrystallineOre]>",
+		"Can transform to [StarCraft.Unit.Overlord] <costs [100] [CrystallineOre]>",
+		"StarCraft.LightArmor",
+		"StarCraft.Biology",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Unit.Drone",//工蜂
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 2,
+		"strength": 0,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Uncapturable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [1] [Supply]",
+		//"Instantly consumes [50] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		"Can transform to [StarCraft.Building.hatchery] <costs [300] [CrystallineOre]>",
+		"Consumes [-10] [CrystallineOre] <in [Bonus resource] tiles>",
+		"Consumes [-10] [Mashgas] <in [Luxury resource] tiles>",
+		"StarCraft.LightArmor",
+		"StarCraft.Biology",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Unit.Overlord",//王虫
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 14,
+		//"rangedStrength": 9,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [-8] [Supply]",
+		//"Instantly consumes [50] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Biology",
+		],
+		//"attackSound": ""
+	},
+{
+		"name": "StarCraft.Unit.Zergling",//跳虫
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 2,
+		"strength": 6,
+		//"rangedStrength": 9,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [CrystallineOre]>",
+		"Consumes [1] [Supply]",
+		//"Instantly consumes [50] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		"StarCraft.HeavyArmor",
+		"StarCraft.Biology",
+		],
+		//"attackSound": ""
+	},
+	
+	
 	
 	/*StarCraft.Building.CommandCenter = 指挥中心
 StarCraft.Building.SupplyDepot = 补给站
@@ -1640,12 +2058,6 @@ StarCraft.Unit.SiegeTank.Stay = 攻城坦克-变形
 StarCraft.Unit.Thor = 雷神
 StarCraft.Unit.Thor.Stay = 雷神-变形*/
 	
-	
-	
-	//Supply = 补给
-	//CrystallineOre = 晶体矿
-	//Mashgas = 高能瓦斯
-	//"[1] free [StarCraft.Unit.XXXX] units appear <for [1] movement> <when above [0] [Supply]> <when above [0] [CrystallineOre]> <when above [-1] [Mashgas]>",
 	//"StarCraft.HeavyArmor",
 	//"StarCraft.LightArmor",
     //"StarCraft.Machinery",
@@ -1653,11 +2065,175 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
     //"StarCraft.LightArmor",
     //"StarCraft.Biology",
 	
+	//Supply = 补给
+	//CrystallineOre = 晶体矿
+	//Mashgas = 高能瓦斯
+	{
+		"name": "英雄选择1",//
+		"unitType": "ComDifMod.Land",
+		//"range": 3,
+		"movement": 1,
+		"strength": 15,
+		//"rangedStrength": 15,
+		"replaces": "Settler",
+		"uniqueTo": "Nation.Player4",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [英雄之力]>",
+		"[1] free [易大师] units appear <by consuming this unit>",
+		"[1] free [提莫] units appear <by consuming this unit>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "易大师",//
+		"unitType": "ComDifMod.Land",
+		//"range": 2,
+		"movement": 3,
+		"strength": 20,
+		//"rangedStrength": 9,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [""],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [英雄之力]>",
+		"Consumes [1] [英雄之力]",
+		"Consumes [-3] [法力] <when below [50] [法力]>",
+		"Consumes [-1] [英雄技能] <when below [1] [英雄技能]>",
+		"[1] additional attacks per turn",
+		"Unit will heal every turn, even if it performs an action",
+		"[+5]% Strength <for every [1] [英雄击杀数]>",
+		"Instantly provides [1] [英雄击杀数] <upon defeating a [Wounded] unit>",
+		"[This Unit] gains the [阿尔法突袭] status for [1] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
+		"[This Unit] gains the [冥想] status for [1] turn(s) <costs [15] [法力]> <costs [1] [英雄技能]>",
+		"[This Unit] gains the [无极剑道] status for [2] turn(s) <costs [15] [法力]> <costs [1] [英雄技能]>",
+		"[This Unit] gains the [高原血统] status for [2] turn(s) <costs [25] [法力]> <costs [1] [英雄技能]>",
+		
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "提莫",//
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 3,
+		"strength": 15,
+		"rangedStrength": 15,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [""],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		//"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [英雄之力]>",
+		"Consumes [1] [英雄之力]",
+		"Consumes [-3] [法力] <when below [50] [法力]>",
+		"Consumes [-1] [英雄技能] <when below [1] [英雄技能]>",
+		"Unit will heal every turn, even if it performs an action",
+		"Invisible to non-adjacent units",
+		"[+5]% Strength <for every [1] [英雄击杀数]>",
+		"Instantly provides [1] [英雄击杀数] <upon defeating a [Wounded] unit>",
+		"[This Unit] gains the [致盲吹箭] status for [2] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
+		"[This Unit] gains the [小莫快跑] status for [1] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
+		"[This Unit] gains the [毒性射击] status for [2] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
+		"[1] free [种蘑菇] units appear <costs [15] [法力]> <costs [1] [英雄技能]>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "种蘑菇",//
+		"unitType": "ComDifMod.Land",
+		"range": 2,
+		"movement": 1,
+		"strength": 20,
+		"rangedStrength": 20,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [""],
+		"uniques": [
+		"Unbuildable",
+		//"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Only available <with [英雄之力]>",
+		"Invisible to non-adjacent units",
+		"[+5]% Strength <for every [1] [英雄击杀数]>",
+		"Instantly provides [1] [英雄击杀数] <upon defeating a [Wounded] unit>",
+		"Self-destructs when attacking",
+		],
+		//"attackSound": ""
+	},
 	
 	
 	
+	
+	
+	
+	
+	//"This Unit gains the [阿尔法突袭] status for [1] turn(s)",
+//"This Unit loses the [当前无状态] status",
+	
+	
+	
+	//"[1] free [StarCraft.Unit.XXXX] units appear <for [1] movement> <when above [0] [Supply]> <when above [0] [CrystallineOre]> <when above [-1] [Mashgas]>",
+	
+	
+	
+	
+	
+/*20力2移
+阿尔法突袭
+加移动力，攻后可移动
+
+冥想
+回复血量，防御时加力
+
+无极剑道
+攻击加力
+被动：攻击加力
+
+高原血统
+被动：杀人回蓝
+多连击
+加移动力
+
+被动：双重打击
+额外攻击一次*/
 	
 ]
+//<upon losing at least [10] HP in a single attack>
 //"Uncapturable",
 //"Must set up to ranged attack",
 //"Ranged attacks may be performed over obstacles",

@@ -111,7 +111,42 @@
 			"1",
 		]
 	},
-	
+	{
+		"name": "Nation.Player4",
+		"leaderName": "Leader",
+		"adjective": [""],
+		"preferredVictoryType": "Domination",
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		"outerColor": [255, 255, 255],
+		"innerColor": [65, 141, 254],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [
+		//"Provides [1] [Player] <hidden from users>",
+		"[-100]% maintenance costs",
+		"[-100]% maintenance on road & railroads",
+		"[-100]% unhappiness from the number of cities",
+		"[-100]% Unhappiness from [Population] [in all cities]",
+		"Nullifies [Science] [in all cities]",
+		"Nullifies [Culture] [in all cities]",
+		"Nullifies [Gold] [in all cities]",
+		"Nullifies [Faith] [in all cities]",
+		"Nullifies [Production] [in all cities]",
+		"This Unit takes [100] damage <for [Warrior] units>",
+		"Provides [1] [英雄之力]",
+		],
+		"cities": [
+			"1",
+		]
+	},
 	
 	
 	

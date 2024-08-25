@@ -1,489 +1,671 @@
 
 game.png
-size: 2048, 128
+size: 2048, 512
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
-TileSets/FantasyHex/Units/RustedWar.Building.ResourceExtractorT1
+TileSets/RustedWar.Building.ResourceExtractorT1
   rotate: false
-  xy: 4, 53
+  xy: 475, 253
   size: 148, 59
   orig: 148, 59
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.ResourceExtractorT1
   rotate: false
-  xy: 4, 53
+  xy: 475, 253
   size: 148, 59
   orig: 148, 59
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.ResourceExtractorT2
+TileSets/RustedWar.Building.ResourceExtractorT2
   rotate: false
-  xy: 160, 53
+  xy: 667, 445
   size: 148, 59
   orig: 148, 59
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.ResourceExtractorT2
   rotate: false
-  xy: 160, 53
+  xy: 667, 445
   size: 148, 59
   orig: 148, 59
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.ResourceExtractorT3
+TileSets/RustedWar.Building.ResourceExtractorT3
   rotate: false
-  xy: 316, 53
+  xy: 475, 186
   size: 148, 59
   orig: 148, 59
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.ResourceExtractorT3
   rotate: false
-  xy: 316, 53
+  xy: 475, 186
   size: 148, 59
   orig: 148, 59
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.ResourceInstrumentT1
+TileSets/RustedWar.Building.ResourceInstrumentT1
   rotate: false
-  xy: 472, 52
+  xy: 667, 377
   size: 141, 60
   orig: 141, 60
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.ResourceInstrumentT1
   rotate: false
-  xy: 472, 52
+  xy: 667, 377
   size: 141, 60
   orig: 141, 60
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.ResourceInstrumentT2
+TileSets/RustedWar.Building.ResourceInstrumentT2
   rotate: false
-  xy: 621, 52
+  xy: 475, 118
   size: 141, 60
   orig: 141, 60
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.ResourceInstrumentT2
   rotate: false
-  xy: 621, 52
+  xy: 475, 118
   size: 141, 60
   orig: 141, 60
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.ResourceInstrumentT3
+TileSets/RustedWar.Building.ResourceInstrumentT3
   rotate: false
-  xy: 770, 52
+  xy: 475, 50
   size: 141, 60
   orig: 141, 60
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.ResourceInstrumentT3
   rotate: false
-  xy: 770, 52
+  xy: 475, 50
   size: 141, 60
   orig: 141, 60
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.CombatEngineer
+TileSets/RustedWar.Unit.CombatEngineer
   rotate: false
-  xy: 1841, 63
+  xy: 1123, 371
   size: 45, 49
   orig: 45, 49
   offset: 0, 0
   index: -1
 UnitActionIcons/Unit.CombatEngineer
   rotate: false
-  xy: 1841, 63
+  xy: 1123, 371
   size: 45, 49
   orig: 45, 49
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.CombatEngineer
   rotate: false
-  xy: 1841, 63
+  xy: 1123, 371
   size: 45, 49
   orig: 45, 49
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.MammothTank
+TileSets/RustedWar.Unit.MammothTank
   rotate: false
-  xy: 4, 4
+  xy: 823, 463
   size: 90, 41
   orig: 90, 41
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.MammothTank
   rotate: false
-  xy: 4, 4
+  xy: 823, 463
   size: 90, 41
   orig: 90, 41
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.PlasmaTank
+TileSets/RustedWar.Unit.PlasmaTank
   rotate: false
-  xy: 102, 16
+  xy: 4, 4
   size: 52, 29
   orig: 52, 29
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.PlasmaTank
   rotate: false
-  xy: 102, 16
+  xy: 4, 4
   size: 52, 29
   orig: 52, 29
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.Tout
+TileSets/RustedWar.Unit.Tout
   rotate: false
-  xy: 162, 24
+  xy: 907, 327
   size: 24, 21
   orig: 24, 21
   offset: 0, 0
   index: -1
 UnitActionIcons/Unit.Tout
   rotate: false
-  xy: 162, 24
+  xy: 907, 327
   size: 24, 21
   orig: 24, 21
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.Tout
   rotate: false
-  xy: 162, 24
+  xy: 907, 327
   size: 24, 21
   orig: 24, 21
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/StarCraft.Building.Barracks
+TileSets/StarCraft.Building.Barracks
   rotate: false
-  xy: 919, 36
+  xy: 667, 293
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
 UnitIcons/StarCraft.Building.Barracks
   rotate: false
-  xy: 919, 36
+  xy: 667, 293
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/StarCraft.Building.CommandCenter
+TileSets/StarCraft.Building.CommandCenter
   rotate: false
-  xy: 1003, 36
+  xy: 751, 293
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
 UnitIcons/StarCraft.Building.CommandCenter
   rotate: false
-  xy: 1003, 36
+  xy: 751, 293
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/StarCraft.Building.Factory
+TileSets/StarCraft.Building.Creeptumor
   rotate: false
-  xy: 1087, 36
+  xy: 921, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Building.Creeptumor
+  rotate: false
+  xy: 921, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+TileSets/StarCraft.Building.Factory
+  rotate: false
+  xy: 1005, 428
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
 UnitIcons/StarCraft.Building.Factory
   rotate: false
-  xy: 1087, 36
+  xy: 1005, 428
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/StarCraft.Building.SupplyDepot
+TileSets/StarCraft.Building.Hatchery
   rotate: false
-  xy: 1171, 36
+  xy: 1089, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Building.Hatchery
+  rotate: false
+  xy: 1089, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+TileSets/StarCraft.Building.Starport
+  rotate: false
+  xy: 1173, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Building.Starport
+  rotate: false
+  xy: 1173, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+TileSets/StarCraft.Building.SupplyDepot
+  rotate: false
+  xy: 1257, 428
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
 ResourceIcons/Supply
   rotate: false
-  xy: 1171, 36
+  xy: 1257, 428
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
 UnitIcons/StarCraft.Building.SupplyDepot
   rotate: false
-  xy: 1171, 36
+  xy: 1257, 428
   size: 76, 76
   orig: 76, 76
   offset: 0, 0
   index: -1
-UnitIcons/StarCraft.Unit.Hellio
+TileSets/StarCraft.Unit.Drone
   rotate: false
-  xy: 1255, 36
-  size: 76, 76
-  orig: 76, 76
+  xy: 631, 126
+  size: 75, 75
+  orig: 75, 75
   offset: 0, 0
   index: -1
-UnitIcons/StarCraft.Unit.Marauder
+UnitIcons/StarCraft.Unit.Drone
   rotate: false
-  xy: 1339, 36
-  size: 76, 76
-  orig: 76, 76
+  xy: 631, 126
+  size: 75, 75
+  orig: 75, 75
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/StarCraft.Unit.Marine
+TileSets/StarCraft.Unit.Marine
   rotate: false
-  xy: 1675, 37
+  xy: 714, 126
   size: 75, 75
   orig: 75, 75
   offset: 0, 0
   index: -1
 UnitIcons/StarCraft.Unit.Marine
   rotate: false
-  xy: 1675, 37
+  xy: 714, 126
   size: 75, 75
   orig: 75, 75
   offset: 0, 0
   index: -1
-UnitIcons/StarCraft.Unit.Reaper
+TileSets/StarCraft.Unit.SCV
   rotate: false
-  xy: 1423, 36
-  size: 76, 76
-  orig: 76, 76
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Units/StarCraft.Unit.SCV
-  rotate: false
-  xy: 1758, 37
+  xy: 797, 126
   size: 75, 75
   orig: 75, 75
   offset: 0, 0
   index: -1
 UnitIcons/StarCraft.Unit.SCV
   rotate: false
-  xy: 1758, 37
+  xy: 797, 126
   size: 75, 75
   orig: 75, 75
   offset: 0, 0
   index: -1
-UnitIcons/StarCraft.Unit.SiegeTank
+TileSets/StarCraft.Unit.Viking
   rotate: false
-  xy: 1507, 36
-  size: 76, 76
-  orig: 76, 76
+  xy: 624, 43
+  size: 75, 75
+  orig: 75, 75
   offset: 0, 0
   index: -1
-UnitIcons/StarCraft.Unit.Thor
+UnitIcons/StarCraft.Unit.Viking
   rotate: false
-  xy: 1591, 36
-  size: 76, 76
-  orig: 76, 76
+  xy: 624, 43
+  size: 75, 75
+  orig: 75, 75
   offset: 0, 0
   index: -1
 UnitActionIcons/Building.GunEmplacementT1
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.GunEmplacementT1
+TileSets/RustedWar.Building.GunEmplacementT1
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.GunEmplacementT2
+TileSets/RustedWar.Building.GunEmplacementT2
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.MachinegunEmplacementT1
+TileSets/RustedWar.Building.MachinegunEmplacementT1
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.MachinegunEmplacementT2
+TileSets/RustedWar.Building.MachinegunEmplacementT2
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Building.MachinegunEmplacementT3
+TileSets/RustedWar.Building.MachinegunEmplacementT3
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitActionIcons/Building.GunEmplacementT2
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitActionIcons/Building.MachinegunEmplacementT1
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitActionIcons/Building.MachinegunEmplacementT2
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitActionIcons/Building.MachinegunEmplacementT3
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.GunEmplacementT1
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.GunEmplacementT2
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.MachinegunEmplacementT1
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.MachinegunEmplacementT2
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Building.MachinegunEmplacementT3
   rotate: false
-  xy: 1894, 80
+  xy: 1176, 388
   size: 35, 32
   orig: 35, 32
   offset: 0, 0
   index: -1
+UnitIcons/StarCraft.Unit.Battlecruiser
+  rotate: false
+  xy: 1341, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Hellio
+  rotate: false
+  xy: 1425, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Larva
+  rotate: false
+  xy: 1509, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Marauder
+  rotate: false
+  xy: 1593, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Medivac
+  rotate: false
+  xy: 1677, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Overlord
+  rotate: false
+  xy: 1761, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Queen
+  rotate: false
+  xy: 1845, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Raven
+  rotate: false
+  xy: 1929, 428
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Reaper
+  rotate: false
+  xy: 631, 209
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.SiegeTank
+  rotate: false
+  xy: 715, 209
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/StarCraft.Unit.Thor
+  rotate: false
+  xy: 799, 209
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+UnitIcons/提莫
+  rotate: false
+  xy: 4, 41
+  size: 463, 463
+  orig: 463, 463
+  offset: 0, 0
+  index: -1
+UnitIcons/易大师
+  rotate: false
+  xy: 475, 320
+  size: 184, 184
+  orig: 184, 184
+  offset: 0, 0
+  index: -1
+UnitIcons/种蘑菇
+  rotate: false
+  xy: 835, 319
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/ComDifMod.RustedWar
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
 ResourceIcons/Money
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.Builder.1
+TileSets/RustedWar.Unit.Builder.1
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.Builder.2
+TileSets/RustedWar.Unit.Builder.2
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.Builder.3
+TileSets/RustedWar.Unit.Builder.3
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/RustedWar.Unit.Builder.4
+TileSets/RustedWar.Unit.Builder.4
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-UnitActionIcons/Unit.Builder.1
+UnitActionIcons/Unit.Bulider.1
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-UnitActionIcons/Unit.Builder.2
+UnitActionIcons/Unit.Bulider.2
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-UnitActionIcons/Unit.Builder.3
+UnitActionIcons/Unit.Bulider.3
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
-UnitActionIcons/Unit.Builder.4
+UnitActionIcons/Unit.Bulider.4
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.Builder.1
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.Builder.2
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.Builder.3
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
   offset: 0, 0
   index: -1
 UnitIcons/RustedWar.Unit.Builder.4
   rotate: false
-  xy: 1937, 82
+  xy: 2013, 474
   size: 25, 30
   orig: 25, 30
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/冥想
+  rotate: false
+  xy: 707, 54
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/小莫快跑
+  rotate: false
+  xy: 779, 54
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/无极剑道
+  rotate: false
+  xy: 851, 54
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/毒性射击
+  rotate: false
+  xy: 823, 391
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/致盲吹箭
+  rotate: false
+  xy: 907, 356
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/阿尔法突袭
+  rotate: false
+  xy: 979, 356
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/高原血统
+  rotate: false
+  xy: 1051, 356
+  size: 64, 64
+  orig: 64, 64
   offset: 0, 0
   index: -1

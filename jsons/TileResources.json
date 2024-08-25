@@ -36,8 +36,45 @@
 		"Stockpiled"//库存
 		]
 	},
+	{
+		"name": "英雄之力",//英雄之力
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		]
+	},
+	{
+		"name": "法力",//法力
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		]
+	},
+	{
+		"name": "英雄技能",//英雄技能
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		]
+	},
+	{
+		"name": "英雄击杀数",//英雄击杀数
+		"resourceType": "Strategic",
+		"revealedBy": "Future Tech",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		]
+	},
 	
 	
 	
-
+	
+	
+	
 ]
