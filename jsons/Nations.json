@@ -1,5 +1,10 @@
 [
+{
+		"name": "Spectator",
+		"outerColor": [255,255,255]
+//		"innerColor": [255,255,255]
 
+	},
 
 	
 	
@@ -115,7 +120,61 @@
 		]
 	},
 	
-	
+	{
+		"name": "Nation.Player5",
+		"leaderName": "Leader",
+		"adjective": [""],
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		"outerColor": [255, 255, 255],
+		"innerColor": [65, 141, 254],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [
+		
+		
+		
+		
+		],
+		"cities": [
+			"1",
+		]
+	},
+	{
+		"name": "Nation.Player6",
+		"leaderName": "Leader",
+		"adjective": [""],
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "",
+		"hateHello": "",
+		"tradeRequest": "",
+		"outerColor": [255, 255, 255],
+		"innerColor": [65, 141, 254],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [
+		
+		
+		
+		],
+		"cities": [
+			"1",
+		]
+	},
 	
 	
 	
