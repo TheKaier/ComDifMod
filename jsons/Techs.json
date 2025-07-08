@@ -1,0 +1,194 @@
+[
+{
+        "columnNumber": 0,
+        "era": "RTS Era",
+        "techCost": 20,
+        "buildingCost": 40,
+        "wonderCost": 120,
+        "techs": [
+{
+"name":"Store Tech",//
+"row":1,
+"quote":"",
+"uniques":[
+"Unavailable",
+]
+},
+{
+"name":"Starting tech",//
+"row":2,
+"quote":"",
+"uniques":[
+"Starting tech",
+]
+},
+]
+    },//记得给文明时代阵营的科技加阵营限制
+    {
+        "columnNumber": 1,
+        "era": "RTS Era",
+        "techCost": 100,
+        "buildingCost": 40,
+        "wonderCost": 120,
+        "techs": [
+{
+"name":"Archer",//
+"row":2,
+"prerequisites":["Starting tech"],
+"quote":"",
+"uniques":[
+
+
+]
+},
+{
+"name":"Spearman",//
+"row":5,
+"prerequisites":["Starting tech"],
+"quote":"",
+"uniques":[
+
+]
+},
+]
+    },
+
+
+
+
+{
+        "columnNumber": 2,
+        "era": "RTS Era",
+        "techCost": 150,
+        "buildingCost": 50,
+        "wonderCost": 120,
+        "techs": [
+{
+"name":"Catapult",//
+"row":1,
+"prerequisites":["Archer"],
+"quote":"",
+"uniques":[
+"Instantly consumes [50] [Tech point]",
+"Only available <when above [49] [Tech point]>",
+]
+},
+{
+"name":"Horseman",//
+"row":2,
+"prerequisites":["Archer"],
+"quote":"",
+"uniques":[
+"Instantly consumes [50] [Tech point]",
+"Only available <when above [49] [Tech point]>",
+]
+},
+{
+"name":"Chariot Archer",//
+"row":3,
+"prerequisites":["Archer"],
+"quote":"",
+"uniques":[
+"Instantly consumes [50] [Tech point]",
+"Only available <when above [49] [Tech point]>",
+]
+},
+{
+"name":"Pikeman",//
+"row":4,
+"prerequisites":["Spearman"],
+"quote":"",
+"uniques":[
+"Instantly consumes [50] [Tech point]",
+"Only available <when above [49] [Tech point]>",
+]
+},
+{
+"name":"Composite Bowman",//
+"row":5,
+"prerequisites":["Archer"],
+"quote":"",
+"uniques":[
+"Instantly consumes [50] [Tech point]",
+"Only available <when above [49] [Tech point]>",
+]
+},
+{
+"name":"Swordsman",//
+"row":6,
+"prerequisites":["Spearman"],
+"quote":"",
+"uniques":[
+"Instantly consumes [50] [Tech point]",
+"Only available <when above [49] [Tech point]>",
+]
+},
+]
+    },
+
+
+
+
+{
+        "columnNumber": 3,
+        "era": "RTS Era",
+        "techCost": 300,
+        "buildingCost": 80,
+        "wonderCost": 180,
+        "techs": [
+{
+"name":"Trebuchet",//
+"row":1,
+"prerequisites":["Catapult"],
+"quote":"",
+"uniques":[
+"Instantly consumes [200] [Tech point]",
+"Only available <when above [199] [Tech point]>",
+
+
+]
+},
+{
+"name":"Knight",//
+"row":2,
+"prerequisites":["Horseman"],
+"quote":"",
+"uniques":[
+"Instantly consumes [200] [Tech point]",
+"Only available <when above [199] [Tech point]>",
+
+]
+},
+{
+"name":"Lancer",//
+"row":4,
+"prerequisites":["Pikeman","Chariot Archer"],
+"quote":"",
+"uniques":[
+"Instantly consumes [200] [Tech point]",
+"Only available <when above [199] [Tech point]>",
+]
+},
+{
+"name":"Crossbowman",//
+"row":5,
+"prerequisites":["Composite Bowman"],
+"quote":"",
+"uniques":[
+"Instantly consumes [200] [Tech point]",
+"Only available <when above [199] [Tech point]>",
+]
+},
+{
+"name":"Longswordsman",//
+"row":6,
+"prerequisites":["Swordsman"],
+"quote":"",
+"uniques":[
+"Instantly consumes [200] [Tech point]",
+"Only available <when above [199] [Tech point]>",
+]
+},
+]
+    },
+]

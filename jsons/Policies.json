@@ -1,0 +1,31 @@
+[
+{
+        "name": "Civilization Era",//文明时代
+        "era": "RTS Era",
+        "priorities": {
+            
+        },
+        "uniques": [
+        "Unavailable",
+        "Provides [10] [Army size]",
+        "Provides [10] [Tech point]",
+],
+        "policies": [
+            {
+                "name": "Get China Features",//获得中华特色
+                "uniques": [
+                
+                ],
+                "row": 1,
+                "column": 1
+            },
+
+            {
+                "name": "Civilization Era Complete",
+                "uniques": [
+
+                ]
+            }
+        ]
+    },
+]

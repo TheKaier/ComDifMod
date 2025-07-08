@@ -1,7 +1,34 @@
 [
+{
+		"name": "Settler",//unciv规则集世界起源
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 0,
+		"uniques": [
+		"Founds a new city <by consuming this unit>",//玩unciv一定要能够造城市
+
+			"[1] free [RustedWar.Building.CommandCenter] units appear <by consuming this unit>",//铁锈战争
+			"[1] free [StarCraft.StarCraft] units appear <by consuming this unit>",//星际争霸
+			"[1] free [LOL.HeroSelection] units appear <by consuming this unit>",//英雄联盟
+			"[1] free [CE.CivSelection] units appear <by consuming this unit>",//文明时代
+			
+			
+			
+			
+			
+			],
+	},
+	{
+		"name": "Warrior",//unciv规则集世界起源护法
+		"unitType": "Civilian",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		
+	},
 /*{//模板
 		"name": "RustedWar.Unit.Bulider",//建造者
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
 		//"strength": 10,
@@ -19,7 +46,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		"Instantly consumes [500] [Money]",
 		"[1] free [ArmyfactoryT1] units appear <for [2] movement>",
 		
@@ -28,7 +55,7 @@
 	},*/
 	/*{
 		"name": "RustedWar.Unit.SeaBuilder",//海上建造者
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		//"range": 2,
 		"movement": 2,
 		//"strength": 15,
@@ -46,7 +73,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		"Instantly consumes [500] [Money]",
 		],
 		//"attackSound": ""
@@ -54,14 +81,12 @@
 	///////////RustedWar.Building
 	
 	{
-		"name": "RustedWar.Building.CommandCenter.1",//指挥中心1
-		"unitType": "ComDifMod.Land",
+		"name": "RustedWar.Building.CommandCenter",//指挥中心
+		"unitType": "RWSC.Land",
 		"range": 3,
 		"movement": 1,
-		"strength": 15,
-		"rangedStrength": 15,
-		"replaces": "Settler",
-		"uniqueTo": "Nation.Player1",
+		"strength": 200,
+		"rangedStrength": 200,
 		"cost": 0,
 		//"requiredTech": "",
 		//"upgradesTo": "",
@@ -73,40 +98,11 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		"Instantly provides [1000] [Money]",//补充资金
 		//"Provides [100] [Money]",
 		"Consumes [-100] [Money]",
-		"[1] free [Warrior] units appear <for [1] movement> <costs [500] [Money]>",
-		"[1] free [RustedWar.Unit.Tout] units appear  <for [1] movement> <costs [700] [Money]>",
-		],
-		//"attackSound": ""
-	},
-	{
-		"name": "RustedWar.Building.CommandCenter.2",//指挥中心2
-		"unitType": "ComDifMod.Land",
-		"range": 3,
-		"movement": 1,
-		"strength": 15,
-		"rangedStrength": 15,
-		"replaces": "Settler",
-		"uniqueTo": "Nation.Player2",
-		"cost": 0,
-		//"requiredTech": "",
-		//"upgradesTo": "",
-		//"obsoleteTech": "",
-		//"promotions": [],
-		"uniques": [
-		"Unbuildable",
-		//"Cannot attack",
-		"Cannot move",
-		"No defensive terrain bonus"
-		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
-		"Instantly provides [1000] [Money]",//补充资金
-		//"Provides [100] [Money]",
-		"Consumes [-100] [Money]",
-		"[1] free [Warrior] units appear <for [1] movement> <costs [500] [Money]>",
+		"[1] free [RustedWar.Unit.Builder] units appear <for [1] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.Tout] units appear  <for [1] movement> <costs [700] [Money]>",
 		],
 		//"attackSound": ""
@@ -117,10 +113,10 @@
 	
 	{
 		"name": "RustedWar.Building.ArmyfactoryT1",//陆军工厂T1
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 15,
+		"strength": 200,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -135,9 +131,9 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [700] [Money]",
-		"[1] free [Warrior] units appear <for [1] movement> <costs [500] [Money]>",
+		"[1] free [RustedWar.Unit.Builder] units appear <for [1] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.Tout] units appear <for [1] movement> <costs [700] [Money]>",
 		"[1] free [RustedWar.Unit.Tank] units appear <for [1] movement> <costs [350] [Money]>",
 		"[1] free [RustedWar.Unit.FloatingTank] units appear <for [1] movement> <costs [450] [Money]>",
@@ -148,10 +144,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ArmyfactoryT2",//陆军工厂T2
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 20,
+		"strength": 250,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -166,9 +162,9 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [2000] [Money]",
-		"[1] free [Warrior] units appear <for [1] movement> <costs [500] [Money]>",
+		"[1] free [RustedWar.Unit.Builder] units appear <for [1] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.Tout] units appear <for [1] movement> <costs [700] [Money]>",
 		"[1] free [RustedWar.Unit.Tank] units appear <for [1] movement> <costs [350] [Money]>",
 		"[1] free [RustedWar.Unit.FloatingTank] units appear <for [1] movement> <costs [450] [Money]>",
@@ -191,10 +187,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceExtractorT1",//资源抽取仪T1
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -209,7 +205,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [700] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-100] [Money] <in [Luxury resource] tiles>",
@@ -219,10 +215,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceExtractorT2",//资源抽取仪T2
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -237,7 +233,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1400] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-200] [Money] <in [Luxury resource] tiles>",
@@ -247,10 +243,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceExtractorT3",//资源抽取仪T3
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 5,
+		"strength": 50,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -265,7 +261,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [4000] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-300] [Money] <in [Luxury resource] tiles>",
@@ -276,10 +272,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceExtractorT4",//资源抽取仪T4
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 5,
+		"strength": 50,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -294,7 +290,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [8000] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-400] [Money] <in [Luxury resource] tiles>",
@@ -303,10 +299,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceExtractorT5",//资源抽取仪T5
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 20,
+		"strength": 200,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -321,7 +317,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [3000] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-300] [Money] <in [Luxury resource] tiles>",
@@ -330,10 +326,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceInstrumentT1",//资源制造仪T1
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -348,7 +344,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [2200] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-75] [Money]",
@@ -358,10 +354,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceInstrumentT2",//资源制造仪T2
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 12,
+		"strength": 120,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -376,7 +372,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [4400] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-150] [Money]",
@@ -386,10 +382,10 @@
 	},
 	{
 		"name": "RustedWar.Building.ResourceInstrumentT3",//资源制造仪T3
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
-		"strength": 15,
+		"strength": 150,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -404,7 +400,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [7500] [Money]",
 		//"Provides [100] [Money]",
 		"Consumes [-200] [Money]",
@@ -419,10 +415,10 @@
 	//ResourceInstrumentT1
 	{
 		"name": "RustedWar.Building.Rehabilitatedbay",//修复湾
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 15,
+		"strength": 150,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -437,18 +433,18 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1500] [Money]",
-		"Heal this unit by [10] HP <upon turn end>",
+		"[This Unit] heals [10] HP <upon turn end>",
 		],
 		//"attackSound": ""
 	},
 	{
 		"name": "RustedWar.Building.WatchtowerT1",//瞭望塔T1
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -463,7 +459,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1500] [Money]",
 		"[+6] Sight",
 		"Can see over obstacles",
@@ -473,10 +469,10 @@
 	},
 	{
 		"name": "RustedWar.Building.WatchtowerT2",//瞭望塔T2
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 12,
+		"strength": 120,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -491,7 +487,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [2000] [Money]",
 		"[+12] Sight",
 		"Can see over obstacles",
@@ -500,11 +496,11 @@
 	},
 	{
 		"name": "RustedWar.Building.MachinegunEmplacementT1",//机枪炮台T1
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 1,
-		"strength": 12,
-		"rangedStrength": 12,
+		"strength": 120,
+		"rangedStrength": 120,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -518,7 +514,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [500] [Money]",
 		"[+1] Sight",
 		"Can transform to [RustedWar.Building.MachinegunEmplacementT2] <costs [1000] [Money]>",
@@ -528,11 +524,11 @@
 	},
 	{
 		"name": "RustedWar.Building.MachinegunEmplacementT2",//机枪炮台T2
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 3,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 16,
+		"strength": 160,
+		"rangedStrength": 160,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -546,7 +542,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		"[1] additional attacks per turn",
 		//"Instantly consumes [1000] [Money]",
 		"[+2] Sight",
@@ -556,11 +552,11 @@
 	},
 	{
 		"name": "RustedWar.Building.MachinegunEmplacementT3",//机枪炮台T3
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 4,
 		"movement": 3,
-		"strength": 13,
-		"rangedStrength": 23,
+		"strength": 130,
+		"rangedStrength": 230,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -574,7 +570,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		"[2] additional attacks per turn",
 		//"Instantly consumes [11000] [Money]",
 		"[+3] Sight",
@@ -583,11 +579,11 @@
 	},
 	{
 		"name": "RustedWar.Building.GunEmplacementT1",//火炮炮台T1
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 4,
 		"movement": 1,
-		"strength": 12,
-		"rangedStrength": 9,
+		"strength": 120,
+		"rangedStrength": 90,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -601,7 +597,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1600] [Money]",
 		"[+3] Sight",
 		"Can transform to [RustedWar.Building.GunEmplacementT2] <costs [9000] [Money]>",
@@ -610,11 +606,11 @@
 	},
 	{
 		"name": "RustedWar.Building.GunEmplacementT2",//火炮炮台T2
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 7,
 		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
+		"strength": 150,
+		"rangedStrength": 150,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -628,7 +624,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [9000] [Money]",
 		"[+5] Sight",
 		"[1] additional attacks per turn",
@@ -637,10 +633,10 @@
 	},
 	{
 		"name": "RustedWar.Building.NavalBaseT1",//海军基地T1
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		//"range": 2,
 		"movement": 1,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -655,7 +651,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1000] [Money]",
 		"[1] free [RustedWar.Unit.SeaBuilder] units appear <for [1] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.MachineGunBoat] units appear <for [1] movement> <costs [300] [Money]>",
@@ -668,10 +664,10 @@
 	},
 	{
 		"name": "RustedWar.Building.NavalBaseT2",//海军基地T2
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		//"range": 2,
 		"movement": 2,//临时双倍产出
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -686,7 +682,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [2000] [Money]",
 		"[1] free [RustedWar.Unit.SeaBuilder] units appear <for [1] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.MachineGunBoat] units appear <for [1] movement> <costs [300] [Money]>",
@@ -709,14 +705,12 @@
 	//NavalBaseT1
 ///////////RustedWar.Unit
 	{
-		"name": "RustedWar.Unit.Builder.1",//建造者1
-		"unitType": "ComDifMod.Land",
+		"name": "RustedWar.Unit.Builder",//建造者
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
 		//"strength": 10,
 		//"rangedStrength": 10,
-		"replaces": "Warrior",
-		"uniqueTo": "Nation.Player1",
 		"cost": 0,
 		//"requiredTech": "",
 		//"upgradesTo": "",
@@ -731,7 +725,7 @@
 		//"[-99]% Strength <vs cities> <when attacking>",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [500] [Money]",
 		"[1] free [RustedWar.Building.ArmyfactoryT1] units appear <for [2] movement> <costs [700] [Money]>",
 		"[1] free [RustedWar.Building.Rehabilitatedbay] units appear <for [2] movement> <costs [1500] [Money]>",
@@ -749,40 +743,6 @@
 		],
 		//"attackSound": ""
 	},
-	{
-		"name": "RustedWar.Unit.Builder.2",//建造者2
-		"unitType": "ComDifMod.Land",
-		//"range": 2,
-		"movement": 2,
-		//"strength": 10,
-		//"rangedStrength": 10,
-		"replaces": "Warrior",
-		"uniqueTo": "Nation.Player2",
-		"cost": 0,
-		//"requiredTech": "",
-		//"upgradesTo": "",
-		//"obsoleteTech": "",
-		//"promotions": [],
-		"uniques": [
-		"Unbuildable",
-		"Uncapturable",
-		//"Cannot attack",
-		//"Cannot move",
-		//"Can only attack [City] units",
-		//"[-99]% Strength <vs cities> <when attacking>",
-		"No defensive terrain bonus"
-		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
-		//"Instantly consumes [500] [Money]",
-		"[1] free [RustedWar.Building.ArmyfactoryT1] units appear <for [2] movement> <costs [700] [Money]>",
-		"[1] free [RustedWar.Building.Rehabilitatedbay] units appear <for [2] movement> <costs [1500] [Money]>",
-		"[1] free [RustedWar.Building.MachinegunEmplacementT1] units appear <for [2] movement> <costs [500] [Money]>",
-		"[1] free [RustedWar.Building.ResourceExtractorT1] units appear <in [Luxury resource] tiles> <for [2] movement> <costs [700] [Money]>",
-		"[1] free [RustedWar.Building.ResourceInstrumentT1] units appear <for [2] movement> <costs [2200] [Money]>",
-		"[1] free [RustedWar.Building.NavalBaseT1] units appear <for [2] movement> <costs [1000] [Money]>",
-		],
-		//"attackSound": ""
-	},
 	
 	
 	
@@ -790,10 +750,10 @@
 	
 	{
 		"name": "RustedWar.Unit.CombatEngineer",//战斗工程师
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 3,
-		"strength": 14,
+		"strength": 140,
 		//"rangedStrength": 14,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -810,14 +770,14 @@
 		"[-99]% Strength <vs cities> <when attacking>",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [3500] [Money]",
 		"May travel on Water tiles without embarking",
 		"Consumes [-10] [Money]",
 		"[1] free [RustedWar.Building.WatchtowerT1] units appear <for [3] movement> <costs [1500] [Money]>",
 		"[1] free [RustedWar.Building.MachinegunEmplacementT1] units appear <for [3] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.HeavyTank] units appear <for [3] movement> <costs [800] [Money]>",
-		"[1] free [Warrior] units appear <for [3] movement> <costs [500] [Money]>",
+		"[1] free [RustedWar.Unit.Builder] units appear <for [3] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Building.ResourceExtractorT1] units appear <with [1] to [6] neighboring [Luxury resource] tiles> <for [3] movement> <costs [700] [Money]>",
 		"[1] free [RustedWar.Building.ArmyfactoryT1] units appear <in [Luxury resource] tiles> <for [3] movement> <costs [700] [Money]>",
 		"[1] free [RustedWar.Building.Rehabilitatedbay] units appear <for [3] movement> <costs [1500] [Money]>",
@@ -831,10 +791,10 @@
 	},
 	{
 		"name": "RustedWar.Unit.Tout",//侦查者
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 1,
 		"movement": 2,
-		"strength": 9,
+		"strength": 90,
 		//"rangedStrength": 9,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -849,7 +809,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [700] [Money]",
 		"[+1] Movement <with [50]% chance>",
 		"[+1] Sight",
@@ -859,11 +819,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.Tank",//坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 1,
 		"movement": 3,
-		"strength": 10,
-		"rangedStrength": 10,
+		"strength": 100,
+		"rangedStrength": 100,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -877,18 +837,18 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [350] [Money]",
 		],
 		//"attackSound": ""
 	},
 	{
 		"name": "RustedWar.Unit.FloatingTank",//悬浮坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 1,
 		"movement": 2,
-		"strength": 8,
-		"rangedStrength": 9,
+		"strength": 80,
+		"rangedStrength": 90,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -902,7 +862,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [450] [Money]",
 		"[+1] Movement <with [75]% chance>",
 		"May travel on Water tiles without embarking",
@@ -911,11 +871,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.SelfpropelledGun",//自行火炮
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 2,
-		"strength": 8,
-		"rangedStrength": 8,
+		"strength": 80,
+		"rangedStrength": 80,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -929,7 +889,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [900] [Money]",
 		"[-1] Movement <with [33]% chance>",
 		
@@ -938,10 +898,10 @@
 	},
 	{
 		"name": "RustedWar.Unit.HeavyTank",//重型坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
-		"strength": 15,
+		"strength": 150,
 		//"rangedStrength": 15,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -956,7 +916,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [800] [Money]",
 		"[+1] Movement <with [66]% chance>",
 		],
@@ -964,11 +924,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.PlasmaTank",//等离子坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 2,
-		"strength": 16,
-		"rangedStrength": 16,
+		"strength": 160,
+		"rangedStrength": 160,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -982,7 +942,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1000] [Money]",
 		"[+1] Movement <with [66]% chance>",
 		"[+25]% Strength <when defending> <when above [85] HP>",
@@ -991,11 +951,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.HeavyAircushionTank",//重型气垫坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 13,
+		"strength": 130,
+		"rangedStrength": 130,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1009,7 +969,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1000] [Money]",
 		"[+1] Movement <with [33]% chance>",
 		"May travel on Water tiles without embarking",
@@ -1018,11 +978,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.HeavyGun",//重型火炮
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 3,
 		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 13,
+		"strength": 130,
+		"rangedStrength": 130,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1036,7 +996,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [3100] [Money]",
 		"[+1] Range <with [33]% chance>",
 		],
@@ -1044,11 +1004,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.MammothTank",//猛犸坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
+		"strength": 150,
+		"rangedStrength": 150,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1062,7 +1022,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [3900] [Money]",
 		"[+45]% Strength <when defending>",
 		],
@@ -1070,7 +1030,7 @@
 	},
 	{
 		"name": "RustedWar.Unit.SeaBuilder",//海上建造者
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		//"range": 2,
 		"movement": 2,
 		//"strength": 15,
@@ -1088,7 +1048,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [500] [Money]",
 		"[1] free [RustedWar.Building.ArmyfactoryT1] units appear <for [2] movement> <costs [700] [Money]>",
 		"[1] free [RustedWar.Building.Rehabilitatedbay] units appear <for [2] movement> <costs [1500] [Money]>",
@@ -1103,11 +1063,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.MachineGunBoat",//机枪艇
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		"range": 1,
 		"movement": 4,
-		"strength": 8,
-		"rangedStrength": 7,
+		"strength": 80,
+		"rangedStrength": 70,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1121,18 +1081,18 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [300] [Money]",
 		],
 		//"attackSound": ""
 	},
 	{
 		"name": "RustedWar.Unit.GuidedMissileShip",//导弹舰
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		"range": 2,
 		"movement": 3,
-		"strength": 11,
-		"rangedStrength": 11,
+		"strength": 110,
+		"rangedStrength": 110,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1146,7 +1106,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [900] [Money]",
 		"[+10]% Strength <when defending>",
 		],
@@ -1154,11 +1114,11 @@
 	},
 	{
 		"name": "RustedWar.Unit.Battleship",//战列舰
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		"range": 2,
 		"movement": 3,
-		"strength": 14,
-		"rangedStrength": 14,
+		"strength": 140,
+		"rangedStrength": 140,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1172,7 +1132,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [1500] [Money]",
 		"[+20]% Strength <when defending>",
 		"[+1] Range <with [50]% chance>",
@@ -1182,10 +1142,10 @@
 	},
 	{
 		"name": "RustedWar.Unit.Submarine",//潜水艇
-		"unitType": "ComDifMod.Water",
+		"unitType": "RWSC.Water",
 		//"range": 1,
 		"movement": 3,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1200,7 +1160,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [Money]>",
+		
 		//"Instantly consumes [800] [Money]",
 		"Can only attack [City] units",
 		"[+100]% Strength <when attacking>",
@@ -1242,14 +1202,12 @@
 	
 	
 	{
-		"name": "StarCraft.StarCraft1",//星际争霸启动器1
-		"unitType": "ComDifMod.Land",
+		"name": "StarCraft.StarCraft",//星际争霸启动器
+		"unitType": "RWSC.Land",
 		//"range": 3,
 		"movement": 1,
 		//"strength": 15,
 		//"rangedStrength": 15,
-		"replaces": "Settler",
-		"uniqueTo": "Nation.Player3",
 		"cost": 0,
 		//"requiredTech": "",
 		//"upgradesTo": "",
@@ -1261,11 +1219,11 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [-1] [Supply]",
 		"Instantly provides [150] [CrystallineOre]",
 		"Can transform to [StarCraft.Building.CommandCenter]",
-		"Can transform to [StarCraft.Building.hatchery]",
+		"Can transform to [StarCraft.Building.Hatchery]",
 		
 		
 		],
@@ -1273,10 +1231,10 @@
 	},
 	{
 		"name": "StarCraft.Building.CommandCenter",//指挥中心
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 30,
+		"strength": 300,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1291,7 +1249,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [-11] [Supply]",
 		//"Instantly consumes [400] [CrystallineOre]",
 		//"Instantly consumes [0] [Mashgas]",
@@ -1305,10 +1263,10 @@
 	},
 	{
 		"name": "StarCraft.Building.SupplyDepot",//补给站
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 10,
+		"strength": 100,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1323,7 +1281,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [-8] [Supply]",
 		//"Instantly consumes [100] [CrystallineOre]",
 		//"Instantly consumes [0] [Mashgas]",
@@ -1335,10 +1293,10 @@
 	},
 	{
 		"name": "StarCraft.Building.Barracks",//兵营
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 20,
+		"strength": 200,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1353,7 +1311,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		//"Consumes [-11] [Supply]",
 		//"Instantly consumes [150] [CrystallineOre]",
 		//"Instantly consumes [0] [Mashgas]",
@@ -1368,10 +1326,10 @@
 	},
 	{
 		"name": "StarCraft.Building.Factory",//重工厂
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 25,
+		"strength": 250,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1386,7 +1344,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		//"Consumes [-11] [Supply]",
 		//"Instantly consumes [150] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
@@ -1401,7 +1359,7 @@
 	},
 	{
 		"name": "StarCraft.Unit.SCV",//SCV
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
 		"strength": 0,
@@ -1420,7 +1378,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
@@ -1439,11 +1397,11 @@
 	},
 	{
 		"name": "StarCraft.Unit.Marine",//陆战队员
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
-		"strength": 9,
-		"rangedStrength": 9,
+		"strength": 90,
+		"rangedStrength": 90,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1457,7 +1415,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
@@ -1468,10 +1426,10 @@
 	},
 	{
 		"name": "StarCraft.Unit.Reaper",//收割者/死神
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 3,
-		"strength": 11,
+		"strength": 110,
 		//"rangedStrength": 9,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1486,7 +1444,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [50] [Mashgas]",
@@ -1497,11 +1455,11 @@
 	},
 	{
 		"name": "StarCraft.Unit.Marauder",//劫掠者
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 13,
+		"strength": 130,
+		"rangedStrength": 130,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1515,7 +1473,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [2] [Supply]",
 		//"Instantly consumes [100] [CrystallineOre]",
 		//"Instantly consumes [25] [Mashgas]",
@@ -1526,10 +1484,10 @@
 	},
 	{
 		"name": "StarCraft.Unit.Hellio",//恶火
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 4,
-		"strength": 11,
+		"strength": 110,
 		//"rangedStrength": 11,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1544,7 +1502,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [2] [Supply]",
 		//"Instantly consumes [100] [CrystallineOre]",
 		//"Instantly consumes [25] [Mashgas]",
@@ -1557,11 +1515,11 @@
 	},
 	{
 		"name": "StarCraft.Unit.SiegeTank",//攻城坦克
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 3,
 		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
+		"strength": 150,
+		"rangedStrength": 150,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1575,7 +1533,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [3] [Supply]",
 		//"Instantly consumes [150] [CrystallineOre]",
 		//"Instantly consumes [125] [Mashgas]",
@@ -1590,11 +1548,11 @@
 	},
 	{
 		"name": "StarCraft.Unit.Thor",//雷神
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 2,
-		"strength": 26,
-		"rangedStrength": 26,
+		"strength": 260,
+		"rangedStrength": 260,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1608,7 +1566,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [6] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
@@ -1624,10 +1582,10 @@
 	},
 	{
 		"name": "StarCraft.Unit.Medivac",//医疗运输机
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 3,
-		"strength": 13,
+		"strength": 130,
 		//"rangedStrength": 26,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1642,7 +1600,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [2] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
@@ -1655,10 +1613,10 @@
 	},
 {
 		"name": "StarCraft.Unit.Raven",//铁鸦
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 3,
-		"strength": 11,
+		"strength": 110,
 		//"rangedStrength": 26,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1673,7 +1631,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [2] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
@@ -1687,11 +1645,11 @@
 	},
 {
 		"name": "StarCraft.Building.Auto-Turret",//自动机炮
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 1,
-		"strength": 10,
-		"rangedStrength": 10,
+		"strength": 100,
+		"rangedStrength": 100,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1705,12 +1663,12 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		//"Consumes [2] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
 		//"Can move after attacking",
-		"This Unit takes [20] damage <upon ending a turn in a [All] tile>",
+		"[This Unit] takes [20] damage <upon ending a turn in a [All] tile>",
 		"StarCraft.HeavyArmor",
 		"StarCraft.Machinery",
 		"StarCraft.Building",
@@ -1720,11 +1678,11 @@
 	},
 {
 		"name": "StarCraft.Unit.Banshee",//女妖
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
-		"movement": 3,
-		"strength": 14,
-		"rangedStrength": 14,
+		"movement": 4,
+		"strength": 140,
+		"rangedStrength": 140,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1738,7 +1696,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [3] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
@@ -1751,11 +1709,11 @@
 	},
 {
 		"name": "StarCraft.Unit.Battlecruiser",//战列巡航舰
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
-		"movement": 2,
-		"strength": 20,
-		"rangedStrength": 20,
+		"movement": 3,
+		"strength": 200,
+		"rangedStrength": 200,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1769,7 +1727,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [6] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
@@ -1783,10 +1741,10 @@
 	},
 	{
 		"name": "StarCraft.Building.Starport",//星港
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 20,
+		"strength": 200,
 		//"rangedStrength": 20,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1801,7 +1759,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		//"Consumes [6] [Supply]",
 		//"Instantly consumes [300] [CrystallineOre]",
 		//"Instantly consumes [200] [Mashgas]",
@@ -1809,7 +1767,7 @@
 		"[1] free [StarCraft.Unit.Medivac] units appear <for [1] movement> <when above [1] [Supply]> <costs [100] [CrystallineOre]> <costs [100] [Mashgas]>",
 		"[1] free [StarCraft.Unit.Raven] units appear <for [1] movement> <when above [1] [Supply]> <costs [100] [CrystallineOre]> <costs [150] [Mashgas]>",
 		"[1] free [StarCraft.Unit.Banshee] units appear <for [1] movement> <when above [2] [Supply]> <costs [150] [CrystallineOre]> <costs [100] [Mashgas]>",
-		"[1] free [StarCraft.Unit.Battlecruiser] units appear <for [1] movement> <when above [1] [Supply]> <costs [400] [CrystallineOre]> <costs [300] [Mashgas]>",
+		"[1] free [StarCraft.Unit.Battlecruiser] units appear <for [1] movement> <when above [5] [Supply]> <costs [400] [CrystallineOre]> <costs [300] [Mashgas]>",
 		"StarCraft.HeavyArmor",
 		"StarCraft.Machinery",
 		"StarCraft.Building",
@@ -1821,11 +1779,11 @@
 	
 	
 		{
-		"name": "StarCraft.Building.hatchery",//孵化场
-		"unitType": "ComDifMod.Land",
+		"name": "StarCraft.Building.Hatchery",//孵化场
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 30,
+		"strength": 300,
 		//"rangedStrength": 10,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1840,7 +1798,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [-8] [Supply]",
 		//"Instantly consumes [400] [CrystallineOre]",
 		//"Instantly consumes [0] [Mashgas]",
@@ -1854,7 +1812,7 @@
 	},
 	{
 		"name": "StarCraft.Building.Creeptumor",//菌毯肿瘤
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
 		//"strength": 20,
@@ -1872,7 +1830,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		//"Consumes [-11] [Supply]",
 		//"Instantly consumes [150] [CrystallineOre]",
 		//"Instantly consumes [0] [Mashgas]",
@@ -1885,11 +1843,11 @@
 	},
 	{
 		"name": "StarCraft.Unit.Queen",//虫后
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		"range": 2,
 		"movement": 1,
-		"strength": 10,
-		"rangedStrength": 10,
+		"strength": 100,
+		"rangedStrength": 100,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -1904,18 +1862,19 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [2] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
 		"[1] free [StarCraft.Building.Creeptumor] units appear <for [1] movement>",
+		"Double movement in [Creep]",
 		"StarCraft.Biology",
 		],
 		//"attackSound": ""
 	},
 	{
 		"name": "StarCraft.Unit.Larva",//幼虫
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
 		"strength": 0,
@@ -1934,12 +1893,12 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		//"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
-		"Can transform to [StarCraft.Unit.Drone] <costs [50] [CrystallineOre]>",
-		"Can transform to [StarCraft.Unit.Zergling] <costs [25] [CrystallineOre]>",
+		"Can transform to [StarCraft.Unit.Drone] <costs [50] [CrystallineOre]> <when above [0] [Supply]>",
+		"Can transform to [StarCraft.Unit.Zergling] <costs [25] [CrystallineOre]> <when above [0] [Supply]>",
 		"Can transform to [StarCraft.Unit.Overlord] <costs [100] [CrystallineOre]>",
 		"StarCraft.LightArmor",
 		"StarCraft.Biology",
@@ -1948,7 +1907,7 @@
 	},
 	{
 		"name": "StarCraft.Unit.Drone",//工蜂
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
 		"strength": 0,
@@ -1967,13 +1926,14 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
-		"Can transform to [StarCraft.Building.hatchery] <costs [300] [CrystallineOre]>",
+		"Can transform to [StarCraft.Building.Hatchery] <costs [300] [CrystallineOre]>",
 		"Consumes [-10] [CrystallineOre] <in [Bonus resource] tiles>",
 		"Consumes [-10] [Mashgas] <in [Luxury resource] tiles>",
+		"Double movement in [Creep]",
 		"StarCraft.LightArmor",
 		"StarCraft.Biology",
 		],
@@ -1981,10 +1941,10 @@
 	},
 	{
 		"name": "StarCraft.Unit.Overlord",//王虫
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 1,
-		"strength": 14,
+		"strength": 140,
 		//"rangedStrength": 9,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -1999,7 +1959,7 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [-8] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
@@ -2010,10 +1970,10 @@
 	},
 {
 		"name": "StarCraft.Unit.Zergling",//跳虫
-		"unitType": "ComDifMod.Land",
+		"unitType": "RWSC.Land",
 		//"range": 2,
 		"movement": 2,
-		"strength": 6,
+		"strength": 60,
 		//"rangedStrength": 9,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -2028,10 +1988,11 @@
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [CrystallineOre]>",
+		
 		"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
+		"Double movement in [Creep]",
 		"StarCraft.HeavyArmor",
 		"StarCraft.Biology",
 		],
@@ -2069,14 +2030,12 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 	//CrystallineOre = 晶体矿
 	//Mashgas = 高能瓦斯
 	{
-		"name": "英雄选择1",//
-		"unitType": "ComDifMod.Land",
+		"name": "LOL.HeroSelection",//英雄选择
+		"unitType": "Civilian",
 		//"range": 3,
 		"movement": 1,
 		"strength": 15,
 		//"rangedStrength": 15,
-		"replaces": "Settler",
-		"uniqueTo": "Nation.Player4",
 		"cost": 0,
 		//"requiredTech": "",
 		//"upgradesTo": "",
@@ -2088,18 +2047,18 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [英雄之力]>",
-		"[1] free [易大师] units appear <by consuming this unit>",
-		"[1] free [提莫] units appear <by consuming this unit>",
+		
+		"[1] free [Master Yi] units appear <by consuming this unit>",
+		"[1] free [Teemo] units appear <by consuming this unit>",
 		],
 		//"attackSound": ""
 	},
 	{
-		"name": "易大师",//
-		"unitType": "ComDifMod.Land",
+		"name": "Master Yi",//易大师
+		"unitType": "LOL.Unit",
 		//"range": 2,
 		"movement": 3,
-		"strength": 20,
+		"strength": 200,
 		//"rangedStrength": 9,
 		//"replaces": "",
 		//"uniqueTo": "",
@@ -2114,30 +2073,30 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [英雄之力]>",
-		"Consumes [1] [英雄之力]",
-		"Consumes [-3] [法力] <when below [50] [法力]>",
-		"Consumes [-1] [英雄技能] <when below [1] [英雄技能]>",
+		
+		"Instantly consumes [1] [The power of a hero]",
+		"Consumes [-3] [MP] <when below [50] [MP]>",
+		"Consumes [-1] [SP] <when below [1] [SP]>",
 		"[1] additional attacks per turn",
 		"Unit will heal every turn, even if it performs an action",
-		"[+5]% Strength <for every [1] [英雄击杀数]>",
-		"Instantly provides [1] [英雄击杀数] <upon defeating a [Wounded] unit>",
-		"[This Unit] gains the [阿尔法突袭] status for [1] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
-		"[This Unit] gains the [冥想] status for [1] turn(s) <costs [15] [法力]> <costs [1] [英雄技能]>",
-		"[This Unit] gains the [无极剑道] status for [2] turn(s) <costs [15] [法力]> <costs [1] [英雄技能]>",
-		"[This Unit] gains the [高原血统] status for [2] turn(s) <costs [25] [法力]> <costs [1] [英雄技能]>",
+		"[+5]% Strength <for every [1] [KD]>",
+		"Instantly provides [1] [KD] <upon defeating a [Wounded] unit>",
+		"[This Unit] gains the [Alpha raid] status for [1] turn(s) <costs [10] [MP]> <costs [1] [SP]>",//阿尔法突袭
+		"[This Unit] gains the [Meditation] status for [1] turn(s) <costs [15] [MP]> <costs [1] [SP]>",//冥想
+		"[This Unit] gains the [Infinite Kendo] status for [2] turn(s) <costs [15] [MP]> <costs [1] [SP]>",//无极剑道
+		"[This Unit] gains the [Highland lineage] status for [2] turn(s) <costs [25] [MP]> <costs [1] [SP]>",//高原血统
 		
 		
 		],
 		//"attackSound": ""
 	},
 	{
-		"name": "提莫",//
-		"unitType": "ComDifMod.Land",
+		"name": "Teemo",//提莫
+		"unitType": "LOL.Unit",
 		"range": 2,
 		"movement": 3,
-		"strength": 15,
-		"rangedStrength": 15,
+		"strength": 150,
+		"rangedStrength": 150,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -2151,29 +2110,29 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 		//"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [英雄之力]>",
-		"Consumes [1] [英雄之力]",
-		"Consumes [-3] [法力] <when below [50] [法力]>",
-		"Consumes [-1] [英雄技能] <when below [1] [英雄技能]>",
+		
+		"Instantly consumes [1] [The power of a hero]",
+		"Consumes [-3] [MP] <when below [50] [MP]>",
+		"Consumes [-1] [SP] <when below [1] [SP]>",
 		"Unit will heal every turn, even if it performs an action",
 		"Invisible to non-adjacent units",
-		"[+5]% Strength <for every [1] [英雄击杀数]>",
-		"Instantly provides [1] [英雄击杀数] <upon defeating a [Wounded] unit>",
-		"[This Unit] gains the [致盲吹箭] status for [2] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
-		"[This Unit] gains the [小莫快跑] status for [1] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
-		"[This Unit] gains the [毒性射击] status for [2] turn(s) <costs [10] [法力]> <costs [1] [英雄技能]>",
-		"[1] free [种蘑菇] units appear <costs [15] [法力]> <costs [1] [英雄技能]>",
+		"[+5]% Strength <for every [1] [KD]>",
+		"Instantly provides [1] [KD] <upon defeating a [Wounded] unit>",
+		"[This Unit] gains the [Blinding and blowing arrows] status for [2] turn(s) <costs [10] [MP]> <costs [1] [SP]>",//致盲吹箭
+		"[This Unit] gains the [Little Mo runs] status for [1] turn(s) <costs [10] [MP]> <costs [1] [SP]>",//小莫快跑
+		"[This Unit] gains the [Toxic shot] status for [2] turn(s) <costs [10] [MP]> <costs [1] [SP]>",//毒性射击
+		"[1] free [Grow mushrooms] units appear <costs [15] [MP]> <costs [1] [SP]>",//种蘑菇
 		
 		],
 		//"attackSound": ""
 	},
 	{
-		"name": "种蘑菇",//
-		"unitType": "ComDifMod.Land",
+		"name": "Grow mushrooms",//种蘑菇
+		"unitType": "LOL.Unit",
 		"range": 2,
 		"movement": 1,
 		"strength": 20,
-		"rangedStrength": 20,
+		"rangedStrength": 200,
 		//"replaces": "",
 		//"uniqueTo": "",
 		"cost": 0,
@@ -2187,10 +2146,10 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		"Only available <with [英雄之力]>",
+		
 		"Invisible to non-adjacent units",
-		"[+5]% Strength <for every [1] [英雄击杀数]>",
-		"Instantly provides [1] [英雄击杀数] <upon defeating a [Wounded] unit>",
+		"[+5]% Strength <for every [1] [KD]>",
+		"Instantly provides [1] [KD] <upon defeating a [Wounded] unit>",
 		"Self-destructs when attacking",
 		],
 		//"attackSound": ""
@@ -2232,6 +2191,1359 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 被动：双重打击
 额外攻击一次*/
 	
+	
+	
+	
+	{
+		"name": "CE.CivSelection",//文明选择
+		"unitType": "Civilian",
+		//"range": 3,
+		"movement": 1,
+		"strength": 15,
+		//"rangedStrength": 15,
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Adopt [Civilization Era]",//开启文明tag选择
+		"[3] free [Worker] units appear",//补强
+		"[1] free [Town Center] units appear <by consuming this unit>",//这里改为推行政策
+		"Free Social Policy",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	{
+		"name": "Worker",
+		"unitType": "Civilian Unit",
+		"movement": 2,
+		"uniques": [
+		"Can build [Farm] improvements on tiles",
+		"Can build [Lumber mill] improvements on tiles",
+		"Can build [Mine] improvements on tiles",
+		"Can build [Fishing Boats] improvements on tiles",
+		"Can build [Remove Forest] improvements on tiles",
+		"Can build [Remove Jungle] improvements on tiles",
+		"Can build [Remove Fallout] improvements on tiles",
+		"Can build [Remove Marsh] improvements on tiles",
+		//"All adjacent units heal [+15] HP when healing",
+		  "[1] free [Frame Town Center] units appear <for [2] movement> <costs [200] [Wood point]> <costs [150] [Stone point]>",
+		  "[1] free [Frame Watchtower] units appear <for [2] movement> <costs [35] [Wood point]>",
+		  "[1] free [Frame Palisade Wall] units appear <for [2] movement> <costs [50] [Wood point]>",
+		  "[1] free [Frame Stone Wall] units appear <for [2] movement> <costs [50] [Stone point]>",
+		  "[1] free [Frame Castle Embrasure] units appear <for [2] movement> <costs [200] [Wood point]> <costs [300] [Stone point]>",
+		  "[1] free [Frame Archery Range] units appear <for [2] movement> <costs [75] [Wood point]>",
+		  "[1] free [Frame Stable] units appear <for [2] movement> <costs [100] [Wood point]> <costs [50] [Stone point]>",
+		  "[1] free [Frame Blacksmith] units appear <for [2] movement> <costs [75] [Wood point]> <costs [75] [Stone point]>",
+		  "[1] free [Frame Workshop] units appear <for [2] movement> <costs [50] [Wood point]> <costs [100] [Stone point]>",
+		  
+		  
+		  "[1] free [Frame Market] units appear <for [2] movement> <costs [50] [Wood point]> <costs [25] [Stone point]>",
+		  "[1] free [Frame University] units appear <for [2] movement> <costs [75] [Wood point]> <costs [50] [Stone point]>",
+		  "[1] free [Frame House] units appear <for [2] movement> <costs [50] [Wood point]>",
+		  
+		  "Consumes [-5] [Gold point] <in [Luxury resource] tiles> <hidden from users>",
+		  "Consumes [-10] [Food point] <in [Farm] tiles> <hidden from users>",
+		  "Consumes [-10] [Wood point] <in [Lumber mill] tiles> <hidden from users>",
+		  "Consumes [-10] [Stone point] <in [Mine] tiles> <hidden from users>",
+		  "Consumes [-15] [Food point] <in [Fishing Boats] tiles> <hidden from users>",
+		  
+		  
+		  "Consumes [-5] [Food point] <in [Farm] tiles> <with [2] to [6] neighboring [Farm] tiles> <hidden from users>",
+		  
+		  //朝廷命官能力
+		  "Consumes [-5] [Stone point] <in [Mine] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
+		  "Consumes [-5] [Wood point] <in [Lumber mill] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
+		  "Consumes [-5] [Food point] <in [Farm] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
+		  "Consumes [-5] [Food point] <in [Fishing Boats] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
+		  //"Consumes [-5] [Gold point] <in [Luxury resource] tiles> when adjacent to a [Official of the court] unit> <hidden from users>",
+		  
+		  
+		  
+		  
+		  
+		],
+		"cost": 45
+	},
+	{
+		"name": "Scout",
+		"unitType": "Civilian Unit",
+		"movement": 3,
+		"strength": 65,
+		"cost": 10,
+		"uniques": [
+		"[+1] Sight",
+		],
+		"attackSound": "nonmetalhit"
+	},
+    {
+        "name": "Archer", // 弓箭手
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 65,
+        "rangedStrength": 80,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"promotions": [],
+        "uniques": [
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Composite Bowman", // 复合弓兵
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 125,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Crossbowman", // 弩手
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 150,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Warrior", // 勇士
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 100,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"requiredTech": "",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Swordsman", // 剑士
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Longswordsman", // 长剑
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 175,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"promotions": [],
+        "uniques": [
+        "[This Unit] heals [3] HP <upon losing at least [1] HP in a single attack>",
+        ],
+        //"attackSound": ""
+    },
+    /*{
+        "name": "Musketeer", // 火枪手
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 26,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 110,
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },*/
+    {
+        "name": "Spearman", // 矛兵
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 120,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 35,
+        //"promotions": [],
+        "uniques": [
+        "[+33]% Strength <when attacking>",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Pikeman", // 长矛兵
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 60,
+        //"promotions": [],
+        "uniques": [
+        "[+33]% Strength <when attacking>",
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Horseman", // 骑手
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 4,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Chariot Archer", // 战车射手
+        "unitType": "Army",
+        "range": 2,
+        "movement": 3,
+        "strength": 100,
+        "rangedStrength": 100,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Rough terrain penalty",
+        "No defensive terrain bonus",
+        //"Can move after attacking",
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Knight", // 骑士
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 5,
+        "strength": 200,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[This Unit] heals [3] HP <upon losing at least [1] HP in a single attack>",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Lancer", // 枪骑兵
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 5,
+        "strength": 175,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[+33]% Strength <when attacking>",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Catapult", // 投石机
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 65,
+        "rangedStrength": 100,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 50,
+        //"promotions": [],
+        "uniques": [
+        "[+150]% Strength <vs [Build] units> <when attacking>",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Trebuchet", // 抛石机
+        "unitType": "Army",
+        "range": 3,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 125,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"promotions": [],
+        "uniques": [
+        "[+200]% Strength <vs [Build] units> <when attacking>",
+		"Must set up to ranged attack",
+        
+        ],
+        //"attackSound": ""
+    },
+    /*{
+	"name": "Galley", // 桨战船
+	"unitType": "Army",
+	//"range": 2,
+	"movement": 4,
+	"strength": 10,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 30,
+	//"promotions": [],
+	"uniques": [
+	"Cannot enter ocean tiles",
+	
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Sailing Warship", // 风帆战船
+	"unitType": "Army",
+	//"range": 2,
+	"movement": 4,
+	"strength": 15,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 45,
+	"uniques": [
+	"Cannot enter ocean tiles",
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Heavy Galleass", // 重桨帆船
+	"unitType": "Army",
+	"range": 2,
+	"movement": 5,
+	"strength": 15,
+	"rangedStrength": 17,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 75,
+	//"promotions": [],
+	"uniques": [
+	"Never appears as a Barbarian unit",
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Light Sloop", // 轻帆船
+	"unitType": "Army",
+	//"range": 2,
+	"movement": 2,
+	"strength": 20,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 90,
+	//"promotions": [],
+	"uniques": [
+	"Never appears as a Barbarian unit",
+	],
+	//"attackSound": ""
+    }*/
+
+
+	//以下是建筑
+	{
+		"name": "Town Center",//城镇中心
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 300,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-5] [Gold point]",
+		"[1] free [Training Warrior] units appear <for [1] movement> <costs [50] [Food point]>",
+		"[1] free [Training Worker] units appear <for [1] movement> <costs [50] [Food point]>",
+		"[1] free [Training Scout] units appear <for [1] movement> <costs [30] [Food point]>",
+		//中华特色单位
+    	"[1] free [Training Official of the court] units appear <for [1] movement> <costs [100] [Food point]> <costs [50] [Gold point]> <after adopting [Get China Features]>",
+		
+		
+		
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		"Free Technology <costs [100] [Tech point]>",
+		"Can carry [1] [Training Army] units",
+		"Consumes [-10] [Army size]",
+		
+		
+		
+		
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Watchtower",//哨塔
+		"unitType": "Build",
+		"range": 2,
+		"rangedStrength": 100,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [3] HP <upon losing at least [1] HP in a single attack>",
+		"[+2] Sight",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Palisade Wall",//木墙
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [3] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Stone Wall",//石墙
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Castle",//城堡
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 300,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Castle Embrasure",//城堡射击口
+		"unitType": "Build",
+		"range": 4,
+		"rangedStrength": 150,
+		"movement": 2,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		"[+1] additional attacks per turn",
+		"[6] free [Castle] units appear",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	{
+		"name": "Archery Range",//靶场
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Training Archer] units appear <for [1] movement> <costs [50] [Food point]> <costs [10] [Gold point]> <after discovering [Archer]>",
+		"[1] free [Training Composite Bowman] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Composite Bowman]>",
+		"[1] free [Training Crossbowman] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Crossbowman]>",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		"Can carry [1] [Archer] units",
+		
+		
+		
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Stable",//训马场
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Training Horseman] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Horseman]>",
+		"[1] free [Training Chariot Archer] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Chariot Archer]>",
+		"[1] free [Training Knight] units appear <for [1] movement> <costs [175] [Food point]> <costs [40] [Gold point]> <after discovering [Knight]>",
+		"[1] free [Training Lancer] units appear <for [1] movement> <costs [175] [Food point]> <costs [40] [Gold point]> <after discovering [Lancer]>",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		"Can carry [1] [Horseman] units",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Blacksmith",//铁匠铺
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Training Spearman] units appear <for [1] movement> <costs [50] [Food point]> <costs [10] [Gold point]> <after discovering [Spearman]>",
+		"[1] free [Training Swordsman] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Swordsman]>",
+		"[1] free [Training Longswordsman] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Longswordsman]>",
+		"[1] free [Training Pikeman] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Pikeman]>",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		"Can carry [1] [Warrior] units",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Workshop",//工匠坊
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Training Catapult] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Catapult]>",
+		"[1] free [Training Trebuchet] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Trebuchet]>",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		"Can carry [1] [Catapult] units",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	{
+		"name": "Market",//贸易站
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-5] [Gold point]",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "University",//学院
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-2] [Tech point]",
+		"Consumes [-1] [Tech point] <with [1] to [6] neighboring [University] tiles>",
+		"Consumes [-1] [Tech point] <with [2] to [6] neighboring [University] tiles>",
+		"Consumes [-1] [Tech point] <with [3] to [6] neighboring [University] tiles>",
+		"Consumes [-1] [Tech point] <with [4] to [6] neighboring [University] tiles>",
+		"Consumes [-1] [Tech point] <with [5] to [6] neighboring [University] tiles>",
+		"Consumes [-1] [Tech point] <with [6] to [6] neighboring [University] tiles>",
+		
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "House",//住宅
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-10] [Army size]",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	
+	
+	/*{
+		"name": "xxxxxxxr",//
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [xxxxxxx] units appear <for [1] movement> <costs [50] [Food point]> <costs [10] [Gold point]> <after discovering [xxxxxxx]>",
+		"[1] free [xxxxxxx] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [xxxxxxx]>",
+		"[1] free [xxxxxxx] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [xxxxxxx]>",
+		"[This Unit] heals [5] HP <upon losing at least [1] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},*/
+	
+	//建筑框架
+	{
+		"name": "Frame Town Center",//城镇中心
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Town Center] <when above [99] HP>",
+		"[This Unit] takes [99] damage",
+		"[This Unit] takes [100] damage <costs [-120] [Wood point]><costs [-120] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Watchtower",//哨塔
+		"unitType": "Build",
+		//"range": 2,
+		//"rangedStrength": 100,
+		"movement": 1,
+		"strength": 50,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Watchtower] <when above [99] HP>",
+		"[This Unit] takes [30] damage",
+		"[This Unit] takes [100] damage <costs [-21] [Wood point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Palisade Wall",//木墙
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 75,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Palisade Wall] <when above [99] HP>",
+		"[This Unit] takes [30] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Stone Wall",//石墙
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Stone Wall] <when above [99] HP>",
+		"[This Unit] takes [30] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Castle",//城堡
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 158,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Castle] <when above [99] HP>",
+		"[This Unit] takes [99] damage",
+		"[This Unit] takes [100] damage <costs [-120] [Wood point]><costs [-180] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Castle Embrasure",//城堡射击口
+		"unitType": "Build",
+		//"range": 4,
+		//"rangedStrength": 150,
+		"movement": 2,
+		"strength": 75,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Castle Embrasure] <when above [99] HP>",
+		"[This Unit] takes [99] damage",
+		"[This Unit] takes [100] damage <costs [-120] [Wood point]><costs [-180] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	{
+		"name": "Frame Archery Range",//靶场
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Archery Range] <when above [99] HP>",
+		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-45] [Wood point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Stable",//训马场
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Stable] <when above [99] HP>",
+		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-60] [Wood point]><costs [-30] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Blacksmith",//铁匠铺
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Blacksmith] <when above [99] HP>",
+		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-45] [Wood point]><costs [-45] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame Workshop",//工匠坊
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Workshop] <when above [99] HP>",
+		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]><costs [-60] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	{
+		"name": "Frame Market",//贸易站
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 50,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [Market] <when above [99] HP>",
+		"[This Unit] takes [40] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]><costs [-15] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame University",//学院
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 75,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [University] <when above [99] HP>",
+		"[This Unit] takes [40] damage",
+		"[This Unit] takes [100] damage <costs [-45] [Wood point]><costs [-30] [Stone point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Frame House",//住宅
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 50,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [House] <when above [99] HP>",
+		"[This Unit] takes [20] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]>",
+		],
+		//"attackSound": ""
+	},
+
+	
+	
+	
+	//训练中单位
+	
+	{
+		"name": "Training Worker",
+		"unitType": "Training Army",
+		"movement": 2,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [20] damage",
+		"Can transform to [Worker] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+		
+		
+		],
+		"cost": 45
+	},
+	{
+		"name": "Training Scout",
+		"unitType": "Training Army",
+		"movement": 3,
+		"strength": 65,
+		"cost": 10,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [20] damage",
+		"Can transform to [Scout] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-18] [Food point]>",
+		],
+		"attackSound": "nonmetalhit"
+	},
+    {
+        "name": "Training Archer", // 弓箭手
+        "unitType": "Training Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 65,
+        "rangedStrength": 80,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [20] damage",
+		"Can transform to [Archer] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+        "Archer",//tag
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Composite Bowman", // 复合弓兵
+        "unitType": "Training Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 125,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Composite Bowman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-45] [Food point]>",
+        "Archer",//tag
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Crossbowman", // 弩手
+        "unitType": "Training Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 150,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [40] damage",
+		"Can transform to [Crossbowman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-75] [Food point]>",
+        "Archer",//tag
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Warrior", // 勇士
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 100,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"requiredTech": "",
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [20] damage",
+		"Can transform to [Warrior] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+        "Warrior",//tag
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Swordsman", // 剑士
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Swordsman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-45] [Food point]>",
+		"Warrior",//tag
+		
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Longswordsman", // 长剑
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 175,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [40] damage",
+		"Can transform to [Longswordsman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-75] [Food point]>",
+		"Warrior",//tag
+        ],
+        //"attackSound": ""
+    },
+	{
+        "name": "Training Spearman", // 矛兵
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 120,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 35,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [20] damage",
+		"Can transform to [Spearman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+        "Warrior",//tag
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Pikeman", // 长矛兵
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 60,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Pikeman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-60] [Food point]>",
+        "Warrior",//tag
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Horseman", // 骑手
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 4,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Horseman] <when above [99] HP> <when above [0] [Army size]>",
+        "Horseman",//tag
+        
+        "[This Unit] takes [100] damage <costs [-60] [Food point]>",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Chariot Archer", // 战车射手
+        "unitType": "Training Army",
+        "range": 2,
+        "movement": 3,
+        "strength": 100,
+        "rangedStrength": 100,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Chariot Archer] <when above [99] HP> <when above [0] [Army size]>",
+        "[This Unit] takes [100] damage <costs [-60] [Food point]>",
+        "Horseman",//tag
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Knight", // 骑士
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 5,
+        "strength": 200,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [40] damage",
+		"Can transform to [Knight] <when above [99] HP> <when above [0] [Army size]>",
+        "Horseman",//tag
+        "[This Unit] takes [100] damage <costs [-105] [Food point]>",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Lancer", // 枪骑兵
+        "unitType": "Training Army",
+        //"range": 2,
+        "movement": 5,
+        "strength": 175,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [40] damage",
+		"Can transform to [Lancer] <when above [99] HP> <when above [0] [Army size]>",
+        "Horseman",//tag
+        "[This Unit] takes [100] damage <costs [-105] [Food point]>",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Catapult", // 投石机
+        "unitType": "Training Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 65,
+        "rangedStrength": 100,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 50,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Catapult] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-45] [Food point]>",
+		"Catapult",//tag
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Training Trebuchet", // 抛石机
+        "unitType": "Training Army",
+        "range": 3,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 125,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"promotions": [],
+        "uniques": [
+        "Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [40] damage",
+		"Can transform to [Trebuchet] <when above [99] HP> <when above [0] [Army size]>",
+        "Catapult",//tag
+        "[This Unit] takes [100] damage <costs [-75] [Food point]>",
+        ],
+        //"attackSound": ""
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+		"name": "Official of the court",//朝廷命官
+		"unitType": "Civilian Unit",
+		"movement": 2,
+		"uniques": [
+		"Comment [Increase the non-gold output of adjacent workers by + 5]",//将相邻工人的非金币产出+5
+		],
+		"cost": 45
+	},
+	{
+	"name": "Training Official of the court",//朝廷命官
+		"unitType": "Training Army",
+		"movement": 2,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"[This Unit] takes [30] damage",
+		"Can transform to [Official of the court] <when above [99] HP>",
+		"[This Unit] takes [100] damage <costs [-60] [Food point]>",
+		],
+		"cost": 45
+	},
+      
+   
 ]
 //<upon losing at least [10] HP in a single attack>
 //"Uncapturable",

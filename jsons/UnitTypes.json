@@ -1,17 +1,53 @@
 [
     {
-        "name": "ComDifMod.Land",//
+        "name": "RWSC.Land",//铁锈星际
         "movementType": "Land"
         //"uniques": []
     },
         {
-        "name": "ComDifMod.Water",
+        "name": "RWSC.Water",
         "movementType": "Water"
         //"uniques": []
     },
         {
-        "name": "ComDifMod.Air",
+        "name": "RWSC.Air",
         "movementType": "Air",
         //"uniques": []
+    },
+        {
+        "name": "LOL.Unit",
+        "movementType": "Land",
+        //"uniques": []
+    },
+    {
+        "name": "Civilian",//unciv高级单位分类
+        "movementType": "Land"
+        //"uniques": []
+    },
+    {
+        "name": "Civilian Unit",
+        "movementType": "Land"
+        "uniques": [
+		"Consumes [1] [Army size]",
+		],
+    },
+    {
+        "name": "Build",
+        "movementType": "Land"
+        "uniques": [
+		"[-10] HP when healing",
+		"[+10] HP when healing <when adjacent to a [Worker] unit>",
+		],
+    },
+    {
+        "name": "Army",
+        "movementType": "Land"
+        "uniques": [
+		"Consumes [1] [Army size]",
+		],
+    },
+    {
+        "name": "Training Army",
+        "movementType": "Air"
     },
    ]

@@ -7,8 +7,39 @@
         "StarCraft.LightArmor",
         "StarCraft.Biology",
         
-        "AirUnit",
+        
+        "Archer",//tag
+        "Warrior",//tag
+        "Horseman",//tag
+        "Catapult",//tag
+        
+        
+        
+        
+        
+        
         //"[This Unit] gains the [致盲] status for [5] turn(s) <upon damaging a [提莫] unit>",
+        "[-100]% unhappiness from the number of cities",//城市不扣快乐
+        "[-100]% Unhappiness from [Population] [in all cities]",//人口不扣快乐
+        "[-1 Happiness] for every known Natural Wonder",//发现奇观不加快乐
+        "[-4] Happiness from each type of luxury resource",//奢侈品不加快乐
+		"[-1 Science] per [1] population [in all cities]",//取消人头瓶
+		"[-100]% Strength for cities <when attacking>",//取消初始城市攻击
+        "[-100]% maintenance costs",//单位维护费修正
+        "[-1 Gold] from every [River]",//删除河流给钱
+        "[-100]% [Gold] from Trade Routes",//取消贸易路线产出
+        "[-100]% Golden Age length",//取消黄金时代
+        "[-100]% Culture cost of adopting new Policies",
+		"Nullifies [Science] [in all cities]",
+		"Nullifies [Culture] [in all cities]",
+		"Nullifies [Gold] [in all cities]",
+		"Nullifies [Faith] [in all cities]",
+		"Nullifies [Production] [in all cities]",
+        "[All] units gain the [Interactive promotion] promotion <upon turn end>",//给予交互晋升
+        
+        
+        
+        
         
         
             ]

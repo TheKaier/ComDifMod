@@ -1,30 +1,23 @@
 [
     {
-        "name": "Double speed",//二倍速
-        "modifier": 0.5,//整体速度
-        "productionCostModifier": 0.5,//产能需求
-        "goldCostModifier": 0.5,//金钱购买力
-        "scienceCostModifier": 0.5,//科技成本
-        "cultureCostModifier": 0.5,//政策成本
-        "faithCostModifier": 0.5,//信仰需求
-        "improvementBuildLengthModifier": 0.5,//区块建造时间
-        "barbarianModifier": 0.5,//蛮族生成时间
-        "goldGiftModifier": 1.5,//城邦送礼影响力
-        "cityStateTributeScalingInterval": 4.0,//城邦进贡间隔
-        "goldenAgeLengthModifier": 0.70,//黄金时代时间
-        "religiousPressureAdjacentCity": 11,//宗教压力
-        "peaceDealDuration": 8,//和平条约
-        "dealDuration": 20,//贸易时长
-        "startYear": -4000,
+        "name": "Standard",
+        "modifier": 1.0,
+        "productionCostModifier": 1.0,
+        "goldCostModifier": 1.0,
+        "scienceCostModifier": 1.0,
+        "cultureCostModifier": 1.0,
+        "faithCostModifier": 1.0,
+        "improvementBuildLengthModifier": 1.0,
+        "barbarianModifier": 1.0,
+        "goldGiftModifier": 1.0,
+        "cityStateTributeScalingInterval": 6.5,
+        "goldenAgeLengthModifier": 1.0,
+        "religiousPressureAdjacentCity": 6,
+        "peaceDealDuration": 10,
+        "dealDuration": 30,
+        "startYear": 0,
         "turns": [
-            {"yearsPerTurn": 80, "untilTurn":  55},
-            {"yearsPerTurn": 60, "untilTurn":  75},
-            {"yearsPerTurn": 40, "untilTurn": 95},
-            {"yearsPerTurn": 30, "untilTurn": 115},
-            {"yearsPerTurn": 20, "untilTurn": 140},
-            {"yearsPerTurn": 10, "untilTurn": 170},
-            {"yearsPerTurn":  5, "untilTurn": 210},
-            {"yearsPerTurn":  2, "untilTurn": 280}
+            {"yearsPerTurn":  1, "untilTurn": 100000}
         ]
     },
     
