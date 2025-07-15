@@ -28,4 +28,103 @@
             }
         ]
     },
+{
+        "name": "StarCraft",//星际争霸
+        "era": "RTS Era",
+        "priorities": {
+            
+        },
+        "uniques": [
+        "Unavailable",
+        
+],
+        "policies": [
+            {
+                "name": "SupplyDepot",//补给站
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Barracks",//兵营
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Factory",//重工厂
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "EngineeringBay",//工程厂
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 4,
+                "column": 1
+            },
+            {
+                "name": "SensorTower",//感应塔
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 5,
+                "column": 1
+            },
+            {
+                "name": "PlanetaryFortress",//行星要塞
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 6,
+                "column": 1
+            },
+            {
+                "name": "Refinery",//精炼厂
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 7,
+                "column": 1
+            },
+            {
+                "name": "GhostAcademy",//幽灵军校
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 8,
+                "column": 1
+            },
+            {
+                "name": "Starport",//星港
+                "uniques": [
+                "Unavailable",
+                ],
+                "row": 9,
+                "column": 1
+            },
+            
+            
+            
+            
+            
+            
+            
+            
+            {
+                "name": "StarCraft Complete",
+                "uniques": [
+
+                ]
+            }
+        ]
+    },
 ]

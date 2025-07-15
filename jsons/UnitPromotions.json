@@ -10,6 +10,18 @@
 		],
 		//"unitTypes": [],
     },
+    {
+		"name": "Collection CrystallineOre",//SCV
+		"uniques": [
+		"[This Unit] loses the [Collection CrystallineOre] promotion <when adjacent to a [StarCraft.Building.CommandCenter] unit> <costs [-15] [CrystallineOre]> <for [2] movement>",
+		],
+    },
+    {
+		"name": "Collection Mashgas",//SCV
+		"uniques": [
+		"[This Unit] loses the [Collection Mashgas] promotion <when adjacent to a [StarCraft.Building.CommandCenter] unit> <costs [-15] [Mashgas]> <for [2] movement>",
+		],
+    },
 	{
 		"name": "Alpha raid",//阿尔法突袭
 		"uniques": [

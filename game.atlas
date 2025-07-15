@@ -18,6 +18,13 @@ ResourceIcons/Bison
   orig: 128, 128
   offset: 0, 0
   index: -1
+ResourceIcons/CrystallineOre
+  rotate: false
+  xy: 1112, 429
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
 ResourceIcons/Food point
   rotate: false
   xy: 1775, 930
@@ -30,6 +37,13 @@ ResourceIcons/Gold point
   xy: 1873, 940
   size: 80, 80
   orig: 80, 80
+  offset: 0, 0
+  index: -1
+ResourceIcons/Mashgas
+  rotate: false
+  xy: 524, 508
+  size: 14, 16
+  orig: 14, 16
   offset: 0, 0
   index: -1
 ResourceIcons/Stone point

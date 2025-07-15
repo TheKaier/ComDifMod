@@ -104,6 +104,7 @@
 		"Consumes [-100] [Money]",
 		"[1] free [RustedWar.Unit.Builder] units appear <for [1] movement> <costs [500] [Money]>",
 		"[1] free [RustedWar.Unit.Tout] units appear  <for [1] movement> <costs [700] [Money]>",
+		"[2] free [Settler] units appear",
 		],
 		//"attackSound": ""
 	},
@@ -1219,7 +1220,7 @@
 		"Cannot move",
 		"No defensive terrain bonus"
 		"Never appears as a Barbarian unit",
-		
+		"Adopt [StarCraft]",//开启
 		"Consumes [-1] [Supply]",
 		"Instantly provides [150] [CrystallineOre]",
 		"Can transform to [StarCraft.Building.CommandCenter]",
@@ -1258,6 +1259,10 @@
 		"StarCraft.HeavyArmor",
         "StarCraft.Machinery",
 		"StarCraft.Building",
+		
+		"Adopt [Barracks]",//解锁
+		"Adopt [Refinery]",//解锁
+		"Adopt [EngineeringBay]",//解锁
 		],
 		//"attackSound": ""
 	},
@@ -1321,6 +1326,8 @@
 		"StarCraft.HeavyArmor",
         "StarCraft.Machinery",
 		"StarCraft.Building",
+		
+		"Adopt [Factory]",//解锁
 		],
 		//"attackSound": ""
 	},
@@ -1354,6 +1361,140 @@
 		"StarCraft.HeavyArmor",
         "StarCraft.Machinery",
 		"StarCraft.Building",
+		
+		"Adopt [Starport]",//解锁
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Building.EngineeringBay",//工程站
+		"unitType": "RWSC.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 150,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		
+		//"Consumes [-11] [Supply]",
+		//"Instantly consumes [150] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		
+		"StarCraft.HeavyArmor",
+        "StarCraft.Machinery",
+		"StarCraft.Building",
+		
+		"Adopt [SensorTower]",//解锁
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "StarCraft.Building.SensorTower",//感应塔
+		"unitType": "RWSC.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 50,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		
+		//"Consumes [-11] [Supply]",
+		//"Instantly consumes [150] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		"Can see over obstacles",
+		"[+7] Sight",
+		"StarCraft.HeavyArmor",
+        "StarCraft.Machinery",
+		"StarCraft.Building",
+		],
+		//"attackSound": ""
+	},
+	/*{
+		"name": "StarCraft.Building.GhostAcademy",//幽灵军校
+		"unitType": "RWSC.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 250,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		
+		//"Consumes [-11] [Supply]",
+		//"Instantly consumes [150] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		
+		
+		
+		"StarCraft.HeavyArmor",
+        "StarCraft.Machinery",
+		"StarCraft.Building",
+		
+		],
+		//"attackSound": ""
+	},*/
+	{
+		"name": "StarCraft.Building.Refinery",//精炼厂
+		"unitType": "RWSC.Land",
+		//"range": 2,
+		"movement": 1,
+		"strength": 100,
+		//"rangedStrength": 10,
+		//"replaces": "",
+		//"uniqueTo": "",
+		"cost": 0,
+		//"requiredTech": "",
+		//"upgradesTo": "",
+		//"obsoleteTech": "",
+		//"promotions": [],
+		"uniques": [
+		"Unbuildable",
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		
+		//"Consumes [-11] [Supply]",
+		//"Instantly consumes [150] [CrystallineOre]",
+		//"Instantly consumes [100] [Mashgas]",
+		
+		
+		
+		"StarCraft.HeavyArmor",
+        "StarCraft.Machinery",
+		"StarCraft.Building",
 		],
 		//"attackSound": ""
 	},
@@ -1382,13 +1523,24 @@
 		"Consumes [1] [Supply]",
 		//"Instantly consumes [50] [CrystallineOre]",
 		//"Instantly consumes [100] [Mashgas]",
+		
 		"[1] free [StarCraft.Building.CommandCenter] units appear <for [2] movement> <costs [400] [CrystallineOre]>",
 		"[1] free [StarCraft.Building.SupplyDepot] units appear <for [2] movement> <costs [100] [CrystallineOre]>",
-		"[1] free [StarCraft.Building.Barracks] units appear <for [2] movement>  <costs [150] [CrystallineOre]>",
-		"[1] free [StarCraft.Building.Factory] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [100] [Mashgas]>",
-		"[1] free [StarCraft.Building.Starport] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [100] [Mashgas]>",
-		"Consumes [-10] [CrystallineOre] <in [Bonus resource] tiles>",
-		"Consumes [-10] [Mashgas] <in [Luxury resource] tiles>",
+		"[1] free [StarCraft.Building.Barracks] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <after adopting [Barracks]>",
+		"[1] free [StarCraft.Building.Factory] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [100] [Mashgas]> <after adopting [Factory]>",
+		"[1] free [StarCraft.Building.Starport] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [100] [Mashgas]> <after adopting [Starport]>",
+		"[1] free [StarCraft.Building.EngineeringBay] units appear <for [2] movement> <costs [125] [CrystallineOre]> <after adopting [EngineeringBay]>",
+		"[1] free [StarCraft.Building.SensorTower] units appear <for [2] movement>  <costs [100] [CrystallineOre]> <costs [50] [Mashgas]> <after adopting [SensorTower]>",
+		"[1] free [StarCraft.Building.Refinery] units appear <for [2] movement>  <costs [75] [CrystallineOre]> <after adopting [Refinery]> <in [Luxury resource] tiles>",
+		//"[1] free [StarCraft.Building.GhostAcademy] units appear <for [2] movement>  <costs [150] [CrystallineOre]> <costs [50] [Mashgas]> <after adopting [GhostAcademy]>",
+		
+		
+		
+		//采集功能
+		"[This Unit] gains the [Collection Mashgas] promotion <when adjacent to a [StarCraft.Building.Refinery] unit> <for [2] movement>",
+		"[This Unit] gains the [Collection CrystallineOre] promotion <in [Bonus resource] tiles> <for [2] movement>",
+		//"Consumes [-10] [CrystallineOre] <in [Bonus resource] tiles>",
+		//"Consumes [-10] [Mashgas] <in [Luxury resource] tiles>",
 		"StarCraft.LightArmor",
         "StarCraft.Machinery",
 		"StarCraft.Biology",
@@ -2241,7 +2393,7 @@ StarCraft.Unit.Thor.Stay = 雷神-变形*/
 		  "[1] free [Frame Watchtower] units appear <for [2] movement> <costs [35] [Wood point]>",
 		  "[1] free [Frame Palisade Wall] units appear <for [2] movement> <costs [50] [Wood point]>",
 		  "[1] free [Frame Stone Wall] units appear <for [2] movement> <costs [50] [Stone point]>",
-		  "[1] free [Frame Castle Embrasure] units appear <for [2] movement> <costs [200] [Wood point]> <costs [300] [Stone point]>",
+		  //"[1] free [Frame Castle Embrasure] units appear <for [2] movement> <costs [200] [Wood point]> <costs [300] [Stone point]>",
 		  "[1] free [Frame Archery Range] units appear <for [2] movement> <costs [75] [Wood point]>",
 		  "[1] free [Frame Stable] units appear <for [2] movement> <costs [100] [Wood point]> <costs [50] [Stone point]>",
 		  "[1] free [Frame Blacksmith] units appear <for [2] movement> <costs [75] [Wood point]> <costs [75] [Stone point]>",
